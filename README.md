@@ -2,7 +2,7 @@
 
 ## SF Activity Connector
 
-** Activities: **
+**Activities:**
 
 * Hiking("need to get moving?")
 
