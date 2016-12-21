@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//
+// Bower packages
+//= require d3/d3
+//= require underscore/underscore
+//
