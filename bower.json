@@ -1,0 +1,8 @@
+{
+  "name": "activity-connector",
+  "dependencies": {
+    "jquery": "latest",
+    "materialize": "latest",
+    "d3": "latest"
+  }
+}

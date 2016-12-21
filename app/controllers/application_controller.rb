@@ -9,4 +9,5 @@ class ApplicationController < ActionController::Base
   #   # handle other errors and return something anyway
   #   render :partial => 'weather'
   # end
+
 end
