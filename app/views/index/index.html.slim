@@ -1,17 +1,24 @@
-.parallax-container
-  .parallax
-    / img[src="/app/assets/images/coffee.jpg"]
-    =image_tag("coffee.jpg")
 .section.white
   .row.container
     h2.header
-      | Parallax
+      | Weather
     p.grey-text.text-darken-3.lighten-3
-      | Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.
-.parallax-container
-  .parallax
-    / img[src="images/parallax2.jpg"]
-    =image_tag("hiking.jpg")
-
-// Add Weather API
-
+      | The current weather will be displayed here! 
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+=render "activities/coffee"
+=render "activities/hike"
+=render "activities/dinner"
+=render "activities/pamper"
+=render "activities/movie"
+=render "activities/tourist"
