@@ -78,4 +78,11 @@ In app/assets/javascripts/application.js:
 ```
 
 
+In app/assets/stylesheets/application.css:
+
+```
+*= require materialize/dist/css/materialize
+```
+
+
 
