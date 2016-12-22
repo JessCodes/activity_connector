@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'parallax-rails'
 gem 'slim'
 gem 'dotenv'
+gem 'google_places'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
