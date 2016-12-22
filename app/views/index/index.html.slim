@@ -1,3 +1,31 @@
+.navbar-fixed
+  nav
+    .nav-wrapper
+      a.brand-logo 
+        | SF Activity Connector
+      ul#nav-mobile.right.hide-on-med-and-down
+        li
+          a =link_to(root_path)
+            | Home
+        li
+          a[href="badges.html"]
+            | Coffee
+        li
+          a[href="collapsible.html"]
+            | Hike
+        li
+          a[href="collapsible.html"]
+            | Dinner
+        li
+          a[href="collapsible.html"]
+            | Pamper
+        li
+          a[href="collapsible.html"]
+            | Movies
+        li
+          a[href="collapsible.html"]
+            | Tourist
+
 .section.white
   .row.container
     h2.header
@@ -21,4 +49,12 @@
 =render "activities/pamper"
 =render "activities/movie"
 =render "activities/tourist"
-=image_tag("footer.jpg")
+
+
+footer.page-footer 
+  .container =image_tag("footer.jpg")
+  .footer-copyright
+    .container
+      |  (c) 2016 Activity Connector 
+      a.grey-text.text-lighten-4.right[href="https://github.com/JessCodes/activity_connector"]
+        | Github Repository
