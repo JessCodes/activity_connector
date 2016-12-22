@@ -2863,7 +2863,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #001a1a;
 }
 
 footer.page-footer .footer-copyright {
@@ -2871,7 +2871,7 @@ footer.page-footer .footer-copyright {
   height: 50px;
   line-height: 50px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(51, 51, 51, 0.08);
+  background-color: #000000;
 }
 
 table, th, td {
@@ -4004,7 +4004,7 @@ input[type=range] + .thumb {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #001a1a;
   width: 100%;
   height: 56px;
   line-height: 56px;
