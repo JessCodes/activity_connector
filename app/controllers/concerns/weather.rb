@@ -17,5 +17,6 @@ class Weather
 	def parse_weather_json
 		p @temp = @response['list'][0]['temp']['day']
 		p @description = @response['list'][0]['weather'][0]['description']
+		p @icon = @response['list'][0]['weather'][0]['icon']
 	end
 end 
