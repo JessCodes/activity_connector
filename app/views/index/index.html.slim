@@ -31,7 +31,13 @@
     h2.header
       | Weather
     p.grey-text.text-darken-3.lighten-3
-      | The current weather will be displayed here! 
+      | Welcome to SF Activity Connector! Take a look at the current weather and scroll below to check out some activities going on San Francisco.
+      br
+      =@weather.temp
+      br
+      =@weather.description
+      br
+      =@weather.icon
       br
       br
       br
