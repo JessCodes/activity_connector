@@ -5,7 +5,12 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-Dotenv.load 
+
+def render_disqus
+  if Rails.env.production?
+    Dotenv::Railtie.load 
+  end
+end
 
 module ActivityConnector
   class Application < Rails::Application

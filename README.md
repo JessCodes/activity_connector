@@ -99,11 +99,11 @@ Add a file called .env to project root.
 
 In .env, add secret keys/value (e.g. ``` KEY=837hsf7393&3873sjyi83 ``` ) Do 'git status' in the command line to make sure that .env is not being tracked and added to the repo. The key/values need to be transfered separately and entered in as environment variables when deployed to Heroku.
 
-In Gemfile, include ``` gem 'dotenv' ``` under development.
+In Gemfile, include ``` gem 'dotenv-rails', :require => 'dotenv/rails-now' ``` and under development include ``` gem 'dotenv-rails' ```.
 
 Under Bundler in config/application.rb: 
 ```
-Dotenv.load
+Dotenv::Railtie.load
 ```
 
 Create weather concern and include HTTParty. Create instance variables from parsed json data.

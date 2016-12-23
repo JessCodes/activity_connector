@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'parallax-rails'
 gem 'slim'
+# gem 'dotenv-rails', :require => 'dotenv/rails-now'
 gem 'google_places'
 
 # Use Capistrano for deployment
@@ -33,11 +34,11 @@ gem 'google_places'
 gem 'bower-rails', '~> 0.11.0'
 
 group :development, :test do
+  gem 'dotenv-rails'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'dotenv'
 end
 
 group :development do
