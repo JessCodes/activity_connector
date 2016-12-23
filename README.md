@@ -4,7 +4,7 @@
 
 **Activities:**
 
-* Coffee("want a pick me up?")
+* Coffee("need a boost?")
 
 * Hiking("need to get moving?")
 
@@ -86,3 +86,28 @@ In app/assets/stylesheets/application.css:
 
 
 
+
+**Weather API:**
+
+In .gitignore:
+
+```
+.env
+```
+
+Add a file called .env to project root.
+
+In .env, add secret keys/value (e.g. ``` KEY=837hsf7393&3873sjyi83 ``` ) Do 'git status' in the command line to make sure that .env is not being tracked and added to the repo. The key/values need to be transfered separately and entered in as environment variables when deployed to Heroku.
+
+In Gemfile, include ``` gem 'dotenv' ``` under development.
+
+Under Bundler in config/application.rb: 
+```
+Dotenv.load
+```
+
+Create weather concern and include HTTParty. Create instance variables from parsed json data.
+
+Instantiate a new instance of the weather class in the controller.
+
+In the view, include the instance variables.
