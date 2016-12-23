@@ -10,7 +10,7 @@ class Weather
 	end 
 
 	def sf_forecast
-		p @response = self.class.get("http://api.openweathermap.org/data/2.5/forecast/daily?q=sanfrancisco&mode=json&units=imperial&cnt=7&APPID=#{ENV['OWM_key']}")
+		@response = self.class.get("http://api.openweathermap.org/data/2.5/forecast/daily?q=sanfrancisco&mode=json&units=imperial&cnt=7&APPID=#{ENV['OWM_key']}")
 		parse_weather_json
 	end 
 
