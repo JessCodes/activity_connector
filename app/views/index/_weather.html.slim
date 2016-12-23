@@ -1,0 +1,20 @@
+.section.white
+  .row.container
+    h2.header
+      | Weather
+    p.grey-text.text-darken-3.lighten-3
+      | Welcome to SF Activity Connector! Take a look at the current weather and scroll below to check out some activities going on San Francisco.
+      br
+      br
+      .container
+        | Temperature: 
+        =@weather.temp 
+        | degrees
+        br
+        | Forecast: 
+        =@weather.description
+        br
+        =image_tag("http://openweathermap.org/img/w/#{@weather.icon}.png")
+      br
+      br
+      br
