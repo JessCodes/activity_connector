@@ -26,7 +26,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'parallax-rails'
 gem 'slim'
-gem 'dotenv'
 gem 'google_places'
 
 # Use Capistrano for deployment
@@ -38,6 +37,7 @@ group :development, :test do
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'dotenv'
 end
 
 group :development do
