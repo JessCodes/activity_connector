@@ -28,6 +28,7 @@ gem 'parallax-rails'
 gem 'slim'
 # gem 'dotenv-rails', :require => 'dotenv/rails-now'
 gem 'google_places'
+gem 'gmaps4rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
