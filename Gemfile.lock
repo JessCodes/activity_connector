@@ -53,6 +53,7 @@ GEM
     ffi (1.9.14)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    gmaps4rails (2.1.2)
     google_places (0.32.0)
       httparty (~> 0.13.1)
     httparty (0.13.7)
@@ -168,6 +169,7 @@ DEPENDENCIES
   bower-rails (~> 0.11.0)
   byebug
   dotenv-rails
+  gmaps4rails
   google_places
   jbuilder (~> 2.5)
   jquery-rails
