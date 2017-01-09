@@ -16,7 +16,7 @@ class Weather
 
 	def parse_weather_json
 		dt_arr = []
-		@dt = response['list'].select { |day| dt_arr << day['dt'] }
+		@dt = @response['list'].select { |day| dt_arr << day['dt'] }
 		@dt = dt_arr
 		# p @dt = @response['list'][0]['dt']
 

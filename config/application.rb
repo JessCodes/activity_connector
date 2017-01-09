@@ -6,11 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-def render_disqus
-  if Rails.env.production?
-    Dotenv::Railtie.load 
-  end
-end
+# def render_disqus
+#   Dotenv::Railtie.load if Rails.env.production?
+# end
 
 module ActivityConnector
   class Application < Rails::Application
