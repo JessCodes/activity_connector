@@ -8,15 +8,73 @@
       br
       .container
         br
-        |TODAY'S FORCAST:
+        |TODAY'S FORCAST: 
+        = Time.at(@weather.dt[0]).strftime("%m/%d/%Y")
         br
         br
         | Temperature: 
-        =@weather.temp 
+        =@weather.temp[0] 
         |  degrees
         br
         | Forecast: 
-        =@weather.description
+        =@weather.description[0]
         br
-        =image_tag("http://openweathermap.org/img/w/#{@weather.icon}.png")
+        =image_tag("http://openweathermap.org/img/w/#{@weather.icon[0]}.png")
+
+.section.white
+  .row.container
+    .col.s12
+    .col.s2
+      = Time.at(@weather.dt[1]).strftime("%m/%d/%Y")
       br
+      =@weather.temp[1] 
+      |  degrees
+      br
+      =@weather.description[1]
+      br
+      =image_tag("http://openweathermap.org/img/w/#{@weather.icon[1]}.png")
+    .col.s2
+      = Time.at(@weather.dt[2]).strftime("%m/%d/%Y")
+      br 
+      =@weather.temp[2] 
+      |  degrees
+      br 
+      =@weather.description[2]
+      br
+      =image_tag("http://openweathermap.org/img/w/#{@weather.icon[2]}.png")
+    .col.s2
+      = Time.at(@weather.dt[3]).strftime("%m/%d/%Y")
+      br 
+      =@weather.temp[3] 
+      |  degrees
+      br
+      =@weather.description[3]
+      br
+      =image_tag("http://openweathermap.org/img/w/#{@weather.icon[3]}.png")
+    .col.s2
+      = Time.at(@weather.dt[4]).strftime("%m/%d/%Y")
+      br 
+      =@weather.temp[4] 
+      |  degrees
+      br
+      =@weather.description[4]
+      br
+      =image_tag("http://openweathermap.org/img/w/#{@weather.icon[4]}.png")
+    .col.s2
+      = Time.at(@weather.dt[5]).strftime("%m/%d/%Y")
+      br 
+      =@weather.temp[5] 
+      |  degrees
+      br
+      =@weather.description[5]
+      br
+      =image_tag("http://openweathermap.org/img/w/#{@weather.icon[5]}.png")
+    .col.s2
+      = Time.at(@weather.dt[6]).strftime("%m/%d/%Y")
+      br 
+      =@weather.temp[6] 
+      |  degrees
+      br
+      =@weather.description[6]
+      br
+      =image_tag("http://openweathermap.org/img/w/#{@weather.icon[6]}.png")
