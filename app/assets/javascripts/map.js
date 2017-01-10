@@ -1,5 +1,10 @@
 function initMap() {
-  var cs1 = {lat: 37.776175, lng: -122.423220};
+  
+  /////////////////////////////////////////////
+  //                cafe map                 //
+  /////////////////////////////////////////////
+
+  var cs1 = {lat: 37.776175, lng: -122.423220};
   var cs2 = {lat: 37.798641, lng: -122.407344};
   var cs3 = {lat: 37.763301, lng: -122.410755};
   var cs4 = {lat: 37.767019, lng: -122.421781};
@@ -53,6 +58,10 @@ function initMap() {
     position: cs10,
     map: map
   });
+
+  ///////////////////////////////////////////////
+  //                 hike map                  //
+  ///////////////////////////////////////////////
 
   var hike1 = {lat: 37.785804, lng: -122.503377};
   var hike2 = {lat: 37.759220, lng: -122.457230};
@@ -109,5 +118,133 @@ function initMap() {
     position: hike10,
     map: hikeMap
   });
+
+  /////////////////////////////////////////////////
+  //                dinner map                   //
+  /////////////////////////////////////////////////
+
+  var dinner1 = {lat: 37.774903, lng: -122.437474};
+  var dinner2 = {lat: 37.756415, lng: -122.419180};
+  var dinner3 = {lat: 37.768360, lng: -122.421768};
+  var dinner4 = {lat: 37.749040, lng: -122.420157};
+  var dinner5 = {lat: 37.806822, lng: -122.431773};
+  var dinner6 = {lat: 37.764072, lng: -122.421699};
+  var dinner7 = {lat: 37.751233, lng: -122.438257};
+  var dinner8 = {lat: 37.765440, lng: -122.466208};
+  var dinner9 = {lat: 37.774041, lng: -122.424244};
+  var dinner10 = {lat: 37.782831, lng: -122.462555};
+
+  var dinnerMap = new google.maps.Map(document.getElementById('dinner-map'), {
+    zoom: 13,
+    center: dinner1
+  });
+  var dinnerMarker1 = new google.maps.Marker({
+    position: dinner1,
+    map: dinnerMap
+  });
+  var dinnerMarker2 = new google.maps.Marker({
+    position: dinner2,
+    map: dinnerMap
+  });
+  var dinnerMarker3 = new google.maps.Marker({
+    position: dinner3,
+    map: dinnerMap
+  });
+  var dinnerMarker4 = new google.maps.Marker({
+    position: dinner4,
+    map: dinnerMap
+  });
+  var dinnerMarker5 = new google.maps.Marker({
+    position: dinner5,
+    map: dinnerMap
+  });
+  var dinnerMarker6 = new google.maps.Marker({
+    position: dinner6,
+    map: dinnerMap
+  });
+  var dinnerMarker7 = new google.maps.Marker({
+    position: dinner7,
+    map: dinnerMap
+  });
+  var dinnerMarker8 = new google.maps.Marker({
+    position: dinner8,
+    map: dinnerMap
+  });
+  var dinnerMarker9 = new google.maps.Marker({
+    position: dinner9,
+    map: dinnerMap
+  });
+  var dinnerMarker10 = new google.maps.Marker({
+    position: dinner10,
+    map: dinnerMap
+  });
+
+  /////////////////////////////////////////////////
+  //                 pamper map                  //
+  /////////////////////////////////////////////////
+
+  var pamper1 = {lat: 37.801968, lng: -122.450005};
+  var pamper2 = {lat: 37.788614, lng: -122.433542};
+  var pamper3 = {lat: 37.786314, lng: -122.401322};
+  var pamper4 = {lat: 37.797358, lng: -122.435773};
+  var pamper5 = {lat: 37.791399, lng: -122.412086};
+  var pamper6 = {lat: 37.793689, lng: -122.393299};
+  var pamper7 = {lat: 37.784510, lng: -122.406709};
+  var pamper8 = {lat: 37.784838, lng: -122.432496};
+  var pamper9 = {lat: 37.786794, lng: -122.394229};
+  var pamper10 = {lat: 37.781512, lng: -122.396465};
+
+  var pamperMap = new google.maps.Map(document.getElementById('pamper-map'), {
+    zoom: 14,
+    center: pamper5
+  });
+  var pamperMarker1 = new google.maps.Marker({
+    position: pamper1,
+    map: pamperMap
+  });
+  var pamperMarker2 = new google.maps.Marker({
+    position: pamper2,
+    map: pamperMap
+  });
+  var pamperMarker3 = new google.maps.Marker({
+    position: pamper3,
+    map: pamperMap
+  });
+  var pamperMarker4 = new google.maps.Marker({
+    position: pamper4,
+    map: pamperMap
+  });
+  var pamperMarker5 = new google.maps.Marker({
+    position: pamper5,
+    map: pamperMap
+  });
+  var pamperMarker6 = new google.maps.Marker({
+    position: pamper6,
+    map: pamperMap
+  });
+  var pamperMarker7 = new google.maps.Marker({
+    position: pamper7,
+    map: pamperMap
+  });
+  var pamperMarker8 = new google.maps.Marker({
+    position: pamper8,
+    map: pamperMap
+  });
+  var pamperMarker9 = new google.maps.Marker({
+    position: pamper9,
+    map: pamperMap
+  });
+  var pamperMarker10 = new google.maps.Marker({
+    position: pamper10,
+    map: pamperMap
+  });
+
+  ////////////////////////////////////////////
+  //               movie map                //
+  ////////////////////////////////////////////
+
+  ////////////////////////////////////////////
+  //              tourist map               //
+  ////////////////////////////////////////////
 
 }
