@@ -29,7 +29,6 @@
 #home
   =render "weather"
 #coffee
-  /in materialize.css line 2761, changed display from 'none' to 'block'.  makes images show with nav bar clicks but parallax does not work then
   =render "activities/coffee"
 #hike
   =render "activities/hike"
@@ -41,6 +40,8 @@
   =render "activities/movie"
 #tourist
   =render "activities/tourist"
+
+script[async defer src="https://maps.googleapis.com/maps/api/js?key=#{ENV['GM_key']}&callback=initMap"]
 
 footer.page-footer 
   .container =image_tag("footer.jpg")
