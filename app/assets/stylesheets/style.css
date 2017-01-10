@@ -1,4 +1,9 @@
-#map {
+#coffee-map {
+  height: 600px;
+  width: 100%;
+}
+
+#hike-map {
   height: 600px;
   width: 100%;
 }

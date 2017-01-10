@@ -1,6 +1,6 @@
-// function initMap() {
+// function initHikeMap() {
 //   var hiking1 = {lat: 37.785804, lng: -122.503377};
-//   var map = new google.maps.Map(document.getElementById('hikemap'), {
+//   var map = new google.maps.Map(document.getElementById('hike-map'), {
 //     zoom: 12,
 //     center: hiking1
 //   });
