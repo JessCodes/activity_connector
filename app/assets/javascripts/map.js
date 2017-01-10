@@ -179,4 +179,72 @@ function initMap() {
     map: dinnerMap
   });
 
+  /////////////////////////////////////////////////
+  //                 pamper map                  //
+  /////////////////////////////////////////////////
+
+  var pamper1 = {lat: 37.801968, lng: -122.450005};
+  var pamper2 = {lat: 37.788614, lng: -122.433542};
+  var pamper3 = {lat: 37.786314, lng: -122.401322};
+  var pamper4 = {lat: 37.797358, lng: -122.435773};
+  var pamper5 = {lat: 37.791399, lng: -122.412086};
+  var pamper6 = {lat: 37.793689, lng: -122.393299};
+  var pamper7 = {lat: 37.784510, lng: -122.406709};
+  var pamper8 = {lat: 37.784838, lng: -122.432496};
+  var pamper9 = {lat: 37.786794, lng: -122.394229};
+  var pamper10 = {lat: 37.781512, lng: -122.396465};
+
+  var pamperMap = new google.maps.Map(document.getElementById('pamper-map'), {
+    zoom: 14,
+    center: pamper5
+  });
+  var pamperMarker1 = new google.maps.Marker({
+    position: pamper1,
+    map: pamperMap
+  });
+  var pamperMarker2 = new google.maps.Marker({
+    position: pamper2,
+    map: pamperMap
+  });
+  var pamperMarker3 = new google.maps.Marker({
+    position: pamper3,
+    map: pamperMap
+  });
+  var pamperMarker4 = new google.maps.Marker({
+    position: pamper4,
+    map: pamperMap
+  });
+  var pamperMarker5 = new google.maps.Marker({
+    position: pamper5,
+    map: pamperMap
+  });
+  var pamperMarker6 = new google.maps.Marker({
+    position: pamper6,
+    map: pamperMap
+  });
+  var pamperMarker7 = new google.maps.Marker({
+    position: pamper7,
+    map: pamperMap
+  });
+  var pamperMarker8 = new google.maps.Marker({
+    position: pamper8,
+    map: pamperMap
+  });
+  var pamperMarker9 = new google.maps.Marker({
+    position: pamper9,
+    map: pamperMap
+  });
+  var pamperMarker10 = new google.maps.Marker({
+    position: pamper10,
+    map: pamperMap
+  });
+
+  ////////////////////////////////////////////
+  //               movie map                //
+  ////////////////////////////////////////////
+
+  ////////////////////////////////////////////
+  //              tourist map               //
+  ////////////////////////////////////////////
+
 }
