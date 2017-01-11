@@ -13,7 +13,17 @@
   width: 100%;
 }
 
+#dinner-map {
+  height: 600px;
+  width: 100%;
+}
+
 #tourist-map {
 	height: 600px;
 	width: 100%;
+}
+
+#pamper-map {
+  height: 600px;
+  width: 100%;
 }
