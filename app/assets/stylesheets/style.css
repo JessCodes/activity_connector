@@ -8,9 +8,19 @@
   width: 100%;
 }
 
+#movie-map {
+  height: 600px;
+  width: 100%;
+}
+
 #dinner-map {
   height: 600px;
   width: 100%;
+}
+
+#tourist-map {
+	height: 600px;
+	width: 100%;
 }
 
 #pamper-map {

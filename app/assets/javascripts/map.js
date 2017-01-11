@@ -243,8 +243,129 @@ function initMap() {
   //               movie map                //
   ////////////////////////////////////////////
 
+  var movie1 = {lat: 37.762033, lng: -122.434759};
+  var movie2 = {lat: 37.794997, lng: -122.399435};
+  var movie3 = {lat: 37.784983, lng: -122.432637};
+  var movie4 = {lat: 37.764710, lng: -122.422408};
+  var movie5 = {lat: 37.782366, lng: -122.482909};
+  var movie6 = {lat: 37.756216, lng: -122.419191};
+  var movie7 = {lat: 37.764859, lng: -122.418865};
+  var movie8 = {lat: 37.784272, lng: -122.403159};
+  var movie9 = {lat: 37.790472, lng: -122.434533};
+  var movie10 = {lat: 37.786828, lng: -122.410628};
+
+  var movieMap = new google.maps.Map(document.getElementById('movie-map'), {
+    zoom: 13,
+    center: movie3
+  });
+  var movieMarker1 = new google.maps.Marker({
+    position: movie1,
+    map: movieMap
+  });
+  var movieMarker2 = new google.maps.Marker({
+    position: movie2,
+    map: movieMap
+  });
+  var movieMarker3 = new google.maps.Marker({
+    position: movie3,
+    map: movieMap
+  });
+  var movieMarker4 = new google.maps.Marker({
+    position: movie4,
+    map: movieMap
+  });
+  var movieMarker5 = new google.maps.Marker({
+    position: movie5,
+    map: movieMap
+  });
+  var movieMarker6 = new google.maps.Marker({
+    position: movie6,
+    map: movieMap
+  });
+  var movieMarker7 = new google.maps.Marker({
+    position: movie7,
+    map: movieMap
+  });
+  var movieMarker8 = new google.maps.Marker({
+    position: movie8,
+    map: movieMap
+  });
+  var movieMarker9 = new google.maps.Marker({
+    position: movie9,
+    map: movieMap
+  });
+  var movieMarker10 = new google.maps.Marker({
+    position: movie10,
+    map: movieMap
+  });
+
   ////////////////////////////////////////////
   //              tourist map               //
   ////////////////////////////////////////////
 
+  var tourist1 = {lat: 37.826977, lng: -122.422956};
+  var tourist2 = {lat: 37.810587, lng: -122.477107};
+  var tourist3 = {lat: 37.769421, lng: -122.486214};
+  var tourist4 = {lat: 37.769829, lng: -122.466105};
+  var tourist5 = {lat: 37.785907, lng: -122.400800};
+  var tourist6 = {lat: 37.755216, lng: -122.447863};
+  var tourist7 = {lat: 37.801665, lng: -122.397348};
+  var tourist8 = {lat: 37.802899, lng: -122.448774};
+  var tourist9 = {lat: 37.778535, lng: -122.389483 };
+  var tourist10 = {lat: 37.771516, lng: -122.468647};
+  var tourist11 = {lat: 37.803907, lng: -122.464062};
+  var tourist12 = {lat: 37.777615, lng: -122.420614};
+
+  var touristMap = new google.maps.Map(document.getElementById('tourist-map'), {
+    zoom: 13,
+    center: tourist12
+  });
+  var touristMarker1 = new google.maps.Marker({
+    position: tourist1,
+    map: touristMap
+  });
+  var touristMarker2 = new google.maps.Marker({
+    position: tourist2,
+    map: touristMap
+  });
+  var touristMarker3 = new google.maps.Marker({
+    position: tourist3,
+    map: touristMap
+  });
+  var touristMarker4 = new google.maps.Marker({
+    position: tourist4,
+    map: touristMap
+  });
+  var touristMarker5 = new google.maps.Marker({
+    position: tourist5,
+    map: touristMap
+  });
+  var touristMarker6 = new google.maps.Marker({
+    position: tourist6,
+    map: touristMap
+  });
+  var touristMarker7 = new google.maps.Marker({
+    position: tourist7,
+    map: touristMap
+  });
+  var touristMarker8 = new google.maps.Marker({
+    position: tourist8,
+    map: touristMap
+  });
+  var touristMarker9 = new google.maps.Marker({
+    position: tourist9,
+    map: touristMap
+  });
+  var touristMarker10 = new google.maps.Marker({
+    position: tourist10,
+    map: touristMap
+  });
+  var touristMarker11 = new google.maps.Marker({
+    position: tourist11,
+    map: touristMap
+  });
+  var touristMarker12 = new google.maps.Marker({
+    position: tourist12,
+    map: touristMap
+  });
 }
