@@ -1,4 +1,14 @@
-function initMap() {
+$(document).ready(function() {
+  mapFunction();
+  $('#coffee-map').hide();
+  $('#hike-map').hide();
+  $('#dinner-map').hide();
+  $('#pamper-map').hide();
+  $('#movie-map').hide();
+  $('#tourist-map').hide();
+});
+
+var mapFunction = function() {
   
   /////////////////////////////////////////////
   //                cafe map                 //
