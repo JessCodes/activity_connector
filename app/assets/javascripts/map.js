@@ -8,8 +8,12 @@ $(document).ready(function() {
   $('#tourist-map').hide();
 });
 
+// $('#coffee-button').click(function(){
+//   $('#coffee-map').toggle();
+// });
+
 var mapFunction = function() {
-  
+
   /////////////////////////////////////////////
   //                cafe map                 //
   /////////////////////////////////////////////
