@@ -113,35 +113,85 @@ var mapFunction = function() {
     csWindow5.open(map, csMarker5);
   });
 
-
+  // Coffee Marker 6 (Ritual Coffee Roasters)
+  var coffeeString6 = '<h5>Ritual Coffee Roasters</h5>'+
+            '<p>1026 Valencia St, San Francisco, CA 94110</p>'+
+            '(415) 641-1011'+
+            '<p><a href="http://www.ritualroasters.com/" " target="_blank">Ritual Coffee Roasters</a></p>';
+  var csWindow6 = new google.maps.InfoWindow({
+    content: coffeeString6
+  });
   var csMarker6 = new google.maps.Marker({
     position: cs6,
     map: map
   });
+  csMarker6.addListener('click', function(){
+    csWindow6.open(map, csMarker6);
+  });
 
-
+  // Coffee Marker 7 (Sightglass Coffee)
+  var coffeeString7 = '<h5>Sightglass Coffee</h5>'+
+            '<p>270 7th Street San Francisco, CA 94103</p>'+
+            '(415) 861-1313'+
+            '<p><a href="https://sightglasscoffee.com/visit/soma" " target="_blank">Sightglass Coffee</a></p>';
+  var csWindow7 = new google.maps.InfoWindow({
+    content: coffeeString7
+  });
   var csMarker7 = new google.maps.Marker({
     position: cs7,
     map: map
   });
+  csMarker7.addListener('click', function(){
+    csWindow7.open(map, csMarker7);
+  });
 
-
+  // Coffee Marker 8 (Snowbird Coffee)
+  var coffeeString8 = '<h5>Snowbird Coffee</h5>'+
+            '<p>1352 9th Ave A, San Francisco, CA 94122</p>'+
+            '(415) 573-7740'+
+            '<p><a href="http://snowbirdcoffee.com/about.html" " target="_blank">Snowbird Coffee</a></p>';
+  var csWindow8 = new google.maps.InfoWindow({
+    content: coffeeString8
+  });
   var csMarker8 = new google.maps.Marker({
     position: cs8,
     map: map
   });
+  csMarker8.addListener('click', function(){
+    csWindow8.open(map, csMarker8);
+  });
 
-
+  // Coffee Marker 9 (Wrecking Ball)
+  var coffeeString9 = '<h5>Wrecking Ball</h5>'+
+            '<p>2271 Union Street, San Francisco, CA 94123</p>'+
+            '(415) 638-9227'+
+            '<p><a href="http://www.wreckingballcoffee.com/pages/our-locations" " target="_blank">Wrecking Ball</a></p>';
+  var csWindow9 = new google.maps.InfoWindow({
+    content: coffeeString9
+  });
   var csMarker9 = new google.maps.Marker({
     position: cs9,
     map: map
   });
+  csMarker9.addListener('click', function(){
+    csWindow9.open(map, csMarker9);
+  });
 
-
+  // Coffee Marker 10 (Workshop Cafe)
+  var coffeeString10 = '<h5>Workshop Cafe</h5>'+
+            '<p>180 Montgomery St #100, San Francisco, CA 94104</p>'+
+            '(415) 322-1048'+
+            '<p><a href="http://www.workshopcafe.com/" " target="_blank">Workshop Cafe</a></p>';
+  var csWindow10 = new google.maps.InfoWindow({
+    content: coffeeString10
+  });
   var csMarker10 = new google.maps.Marker({
     position: cs10,
     map: map
   });
+  csMarker10.addListener('click', function(){
+    csWindow10.open(map, csMarker10);
+  });
 
   ///////////////////////////////////////////////
   //                 hike map                  //

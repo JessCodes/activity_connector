@@ -31,7 +31,7 @@
 8. Snowbird Coffee
     - 1352 9th Ave A, San Francisco, CA 94122
     - (415) 573-7740
-    -  http://snowbirdcoffee.com/about.html
+    - http://snowbirdcoffee.com/about.html
 9. Wrecking Ball
     - 2271 Union Street, San Francisco, CA 94123
     - (415) 638-9227
