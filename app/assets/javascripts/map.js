@@ -33,18 +33,12 @@ var mapFunction = function() {
     center: cs1
   });
 
-  // Cafe Marker 1
-  var contentString1 = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h5 id="firstHeading" class="firstHeading">Blue Bottle</h5>'+
-            '<div id="bodyContent">'+
+  // Cafe Marker 1 (Blue Bottle)
+  var contentString1 = 
+            '<h5>Blue Bottle</h5>'+
             '<p>315 Linden St, San Francisco, CA 94102</p>'+
             '(510) 653-3394'+
-            '<p><a href="https://bluebottlecoffee.com/cafes/kiosk"></p>'+
-            'https://bluebottlecoffee.com/cafes/kiosk</a> '+
-            '</div>'+
-            '</div>';
+            '<p><a href="https://bluebottlecoffee.com/cafes/kiosk" " target="_blank">Blue Bottle Coffee</a></p>';
 
   var infowindow1 = new google.maps.InfoWindow({
     content: contentString1
@@ -56,10 +50,6 @@ var mapFunction = function() {
   csMarker1.addListener('click', function(){
     infowindow1.open(map, csMarker1);
   });
-
-
-
-
 
   var contentString2 = 'test 2'
 
