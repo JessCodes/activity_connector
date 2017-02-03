@@ -1,8 +1,8 @@
-.section.white
+.section#weather
   .row.container
     h2.header
       | Weather
-    p.grey-text.text-darken-3.lighten-3
+    p#welcome-text
       | Welcome to SF Activity Connector! Take a look at the current weather and scroll below to check out some activities going on San Francisco.
       br
       br
@@ -22,7 +22,7 @@
         br
         =image_tag("http://openweathermap.org/img/w/#{@weather.icon[0]}.png")
 
-.section.white
+.section#weather
   .row.container
     .col.s12
     .col.s2
