@@ -15,7 +15,7 @@ $(document).ready(function() {
 var mapFunction = function() {
 
   /////////////////////////////////////////////
-  //                cafe map                 //
+  //                coffee map                 //
   /////////////////////////////////////////////
 
   var cs1 = {lat: 37.776175, lng: -122.423220}; // Blue Bottle
@@ -33,7 +33,7 @@ var mapFunction = function() {
     center: cs1
   });
 
-  // Cafe Marker 1 (Blue Bottle)
+  // Coffee Marker 1 (Blue Bottle)
   var coffeeString1 = '<h5>Blue Bottle</h5>'+
             '<p>315 Linden St, San Francisco, CA 94102</p>'+
             '(510) 653-3394'+
@@ -49,7 +49,7 @@ var mapFunction = function() {
     csWindow1.open(map, csMarker1);
   });
 
-  // Cafe Marker 2 (Caffe Trieste)
+  // Coffee Marker 2 (Caffe Trieste)
   var coffeeString2 = '<h5>Caffe Trieste</h5>'+
             '<p>601 Vallejo St, San Francisco, CA 94133</p>'+
             '(415) 982-2605'+
@@ -65,7 +65,7 @@ var mapFunction = function() {
     csWindow2.open(map, csMarker2);
   });
 
-  // Cafe Marker 3 (Coffee Bar)
+  // Coffee Marker 3 (Coffee Bar)
   var coffeeString3 = '<h5>Coffee Bar</h5>'+
             '<p>1890 Bryant St, San Francisco, CA 94110</p>'+
             '(415) 551-8100'+
@@ -81,30 +81,63 @@ var mapFunction = function() {
     csWindow3.open(map, csMarker3);
   });
 
+  // Coffee Marker 4 (Fourbarrel Coffee)
+  var coffeeString4 = '<h5>Fourbarrel Coffee</h5>'+
+            '<p>375 Valencia St, San Francisco, CA 94103</p>'+
+            '(415) 896-4289'+
+            '<p><a href="http://www.fourbarrelcoffee.com/pages/about-us " " target="_blank">Fourbarrel Coffee</a></p>';
+  var csWindow4 = new google.maps.InfoWindow({
+    content: coffeeString4
+  });
   var csMarker4 = new google.maps.Marker({
     position: cs4,
     map: map
   });
+  csMarker4.addListener('click', function(){
+    csWindow4.open(map, csMarker4);
+  });
+
+  // Coffee Marker 5 (Philz Coffee)
+  var coffeeString5 = '<h5>Philz Coffee</h5>'+
+            '<p>3101 24th St, San Francisco, CA 94110</p>'+
+            '(415) 875-9370'+
+            '<p><a href="http://www.philzcoffee.com/locations-sf" " target="_blank">Philz Coffee</a></p>';
+  var csWindow5 = new google.maps.InfoWindow({
+    content: coffeeString5
+  });
   var csMarker5 = new google.maps.Marker({
     position: cs5,
     map: map
   });
+  csMarker5.addListener('click', function(){
+    csWindow5.open(map, csMarker5);
+  });
+
+
   var csMarker6 = new google.maps.Marker({
     position: cs6,
     map: map
   });
+
+
   var csMarker7 = new google.maps.Marker({
     position: cs7,
     map: map
   });
+
+
   var csMarker8 = new google.maps.Marker({
     position: cs8,
     map: map
   });
+
+
   var csMarker9 = new google.maps.Marker({
     position: cs9,
     map: map
   });
+
+
   var csMarker10 = new google.maps.Marker({
     position: cs10,
     map: map
