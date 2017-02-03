@@ -27,3 +27,5 @@
     - 
 
 ## Hike Map
+1. Land's End
+2. 

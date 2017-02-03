@@ -19,15 +19,15 @@ var mapFunction = function() {
   /////////////////////////////////////////////
 
   var cs1 = {lat: 37.776175, lng: -122.423220}; // Blue Bottle
-  var cs2 = {lat: 37.798641, lng: -122.407344};
-  var cs3 = {lat: 37.763301, lng: -122.410755};
-  var cs4 = {lat: 37.767019, lng: -122.421781};
-  var cs5 = {lat: 37.752345, lng: -122.414309};
-  var cs6 = {lat: 37.756439, lng: -122.421383};
-  var cs7 = {lat: 37.776900, lng: -122.408637};
-  var cs8 = {lat: 37.763162, lng: -122.465974};
+  var cs2 = {lat: 37.798641, lng: -122.407344}; // Cafe Trieste
+  var cs3 = {lat: 37.763301, lng: -122.410755}; // Coffee Bar
+  var cs4 = {lat: 37.767019, lng: -122.421781}; // Fourbarrel Coffee
+  var cs5 = {lat: 37.752345, lng: -122.414309}; // Philz Coffee
+  var cs6 = {lat: 37.756439, lng: -122.421383}; // Ritual Coffee Roasters
+  var cs7 = {lat: 37.776900, lng: -122.408637}; // Sightglass Coffee
+  var cs8 = {lat: 37.763162, lng: -122.465974}; // Snowbird Coffee
   var cs9 = {lat: 37.796751, lng: -122.436629}; // Wrecking Ball Coffee Rosters
-  var cs10 = {lat: 37.790770, lng: -122.402015}; //
+  var cs10 = {lat: 37.790770, lng: -122.402015}; // Workshop Cafe
   var map = new google.maps.Map(document.getElementById('coffee-map'), {
     zoom: 13,
     center: cs1
@@ -116,16 +116,16 @@ var mapFunction = function() {
   //                 hike map                  //
   ///////////////////////////////////////////////
 
-  var hike1 = {lat: 37.785804, lng: -122.503377};
-  var hike2 = {lat: 37.759220, lng: -122.457230};
-  var hike3 = {lat: 37.768641, lng: -122.475318};
-  var hike4 = {lat: 37.741559, lng: -122.443185};
-  var hike5 = {lat: 37.800008, lng: -122.479518};
-  var hike6 = {lat: 37.765312, lng: -122.438585};
-  var hike7 = {lat: 37.739265, lng: -122.454509};
-  var hike8 = {lat: 37.768405, lng: -122.441415};
-  var hike9 = {lat: 37.756408, lng: -122.471740};
-  var hike10 = {lat: 37.746320, lng: -122.468838};
+  var hike1 = {lat: 37.785804, lng: -122.503377}; // Land's End
+  var hike2 = {lat: 37.759220, lng: -122.457230}; // Mount Sutro
+  var hike3 = {lat: 37.768641, lng: -122.475318}; // Strawberry Hill
+  var hike4 = {lat: 37.741559, lng: -122.443185}; // Diamond Heights?
+  var hike5 = {lat: 37.800008, lng: -122.479518}; // Battery to Bluffs Trail
+  var hike6 = {lat: 37.765312, lng: -122.438585}; // Corona Heights
+  var hike7 = {lat: 37.739265, lng: -122.454509}; // Mt. Davidson
+  var hike8 = {lat: 37.768405, lng: -122.441415}; // Buena Vista
+  var hike9 = {lat: 37.756408, lng: -122.471740}; // Grandview Park
+  var hike10 = {lat: 37.746320, lng: -122.468838}; // Hawk Hill Park
 
   var hikeMap = new google.maps.Map(document.getElementById('hike-map'), {
     zoom: 13,
