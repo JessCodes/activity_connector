@@ -34,45 +34,53 @@ var mapFunction = function() {
   });
 
   // Cafe Marker 1 (Blue Bottle)
-  var contentString1 = 
-            '<h5>Blue Bottle</h5>'+
+  var coffeeString1 = '<h5>Blue Bottle</h5>'+
             '<p>315 Linden St, San Francisco, CA 94102</p>'+
             '(510) 653-3394'+
             '<p><a href="https://bluebottlecoffee.com/cafes/kiosk" " target="_blank">Blue Bottle Coffee</a></p>';
-
-  var infowindow1 = new google.maps.InfoWindow({
-    content: contentString1
-  })
+  var csWindow1 = new google.maps.InfoWindow({
+    content: coffeeString1
+  });
   var csMarker1 = new google.maps.Marker({
     position: cs1,
     map: map
   });
   csMarker1.addListener('click', function(){
-    infowindow1.open(map, csMarker1);
+    csWindow1.open(map, csMarker1);
   });
 
-  var contentString2 = 'test 2'
-
-  var infowindow2 = new google.maps.InfoWindow({
-    content: contentString2
-  })
-
+  // Cafe Marker 2 (Caffe Trieste)
+  var coffeeString2 = '<h5>Caffe Trieste</h5>'+
+            '<p>601 Vallejo St, San Francisco, CA 94133</p>'+
+            '(415) 982-2605'+
+            '<p><a href="http://coffee.caffetrieste.com/nbeach" " target="_blank">Caffe Trieste</a></p>';
+  var csWindow2 = new google.maps.InfoWindow({
+    content: coffeeString2
+  });
   var csMarker2 = new google.maps.Marker({
     position: cs2,
     map: map
   });
   csMarker2.addListener('click', function(){
-    infowindow2.open(map, csMarker2);
+    csWindow2.open(map, csMarker2);
   });
 
-
-
-
-
+  // Cafe Marker 3 (Coffee Bar)
+  var coffeeString3 = '<h5>Coffee Bar</h5>'+
+            '<p>1890 Bryant St, San Francisco, CA 94110</p>'+
+            '(415) 551-8100'+
+            '<p><a href="http://www.coffeebarsf.com/bryant-st" " target="_blank">Coffee Bar</a></p>';
+  var csWindow3 = new google.maps.InfoWindow({
+    content: coffeeString3
+  });
   var csMarker3 = new google.maps.Marker({
     position: cs3,
     map: map
   });
+  csMarker3.addListener('click', function(){
+    csWindow3.open(map, csMarker3);
+  });
+
   var csMarker4 = new google.maps.Marker({
     position: cs4,
     map: map
