@@ -49,10 +49,10 @@
     - http://bahiker.com/sfhikes/davidson.html
 
 8. Buena Vista Park
-    - http://sfrecpark.org/destination/buena-vista-park/
+    - https://rootsrated.com/san-francisco-ca/hiking/buena-vista-park-hiking
 
 9. Grandview Park
-    - http://sfrecpark.org/destination/grand-view-park/
+    - https://www.nps.gov/neri/planyourvisit/grandview-trails.htm
 
 10. Hawk Hill Park
     - http://www.parksconservancy.org/visit/park-sites/hawk-hill.html

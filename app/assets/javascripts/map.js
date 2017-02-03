@@ -232,7 +232,7 @@ var mapFunction = function() {
 
   // Hike Pin 8
   var hikeString8 = '<h5>Buena Vista Park</h5>'+
-            '<p><a href="http://sfrecpark.org/destination/buena-vista-park/" " target="_blank">Buena Vista Park Trails</a></p>';
+            '<p><a href="https://rootsrated.com/san-francisco-ca/hiking/buena-vista-park-hiking" " target="_blank">Buena Vista Park Trails</a></p>';
   var hikewindow8 = new google.maps.InfoWindow({
     content: hikeString8
   })
@@ -246,7 +246,7 @@ var mapFunction = function() {
 
   // Hike Pin 9
   var hikeString9 = '<h5>Grandview Park</h5>'+
-            '<p><a href="http://sfrecpark.org/destination/grand-view-park/" " target="_blank">Grandview Park Trails</a></p>';
+            '<p><a href="https://www.nps.gov/neri/planyourvisit/grandview-trails.htm" " target="_blank">Grandview Park Trails</a></p>';
   var hikewindow9 = new google.maps.InfoWindow({
     content: hikeString9
   })
