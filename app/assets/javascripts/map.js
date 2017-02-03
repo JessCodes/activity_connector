@@ -1,7 +1,7 @@
 $(document).ready(function() {
   mapFunction();
   // $('#coffee-map').hide();
-  $('#hike-map').hide();
+  // $('#hike-map').hide();
   $('#dinner-map').hide();
   $('#pamper-map').hide();
   $('#movie-map').hide();
@@ -19,15 +19,15 @@ var mapFunction = function() {
   /////////////////////////////////////////////
 
   var cs1 = {lat: 37.776175, lng: -122.423220}; // Blue Bottle
-  var cs2 = {lat: 37.798641, lng: -122.407344};
-  var cs3 = {lat: 37.763301, lng: -122.410755};
-  var cs4 = {lat: 37.767019, lng: -122.421781};
-  var cs5 = {lat: 37.752345, lng: -122.414309};
-  var cs6 = {lat: 37.756439, lng: -122.421383};
-  var cs7 = {lat: 37.776900, lng: -122.408637};
-  var cs8 = {lat: 37.763162, lng: -122.465974};
+  var cs2 = {lat: 37.798641, lng: -122.407344}; // Cafe Trieste
+  var cs3 = {lat: 37.763301, lng: -122.410755}; // Coffee Bar
+  var cs4 = {lat: 37.767019, lng: -122.421781}; // Fourbarrel Coffee
+  var cs5 = {lat: 37.752345, lng: -122.414309}; // Philz Coffee
+  var cs6 = {lat: 37.756439, lng: -122.421383}; // Ritual Coffee Roasters
+  var cs7 = {lat: 37.776900, lng: -122.408637}; // Sightglass Coffee
+  var cs8 = {lat: 37.763162, lng: -122.465974}; // Snowbird Coffee
   var cs9 = {lat: 37.796751, lng: -122.436629}; // Wrecking Ball Coffee Rosters
-  var cs10 = {lat: 37.790770, lng: -122.402015}; //
+  var cs10 = {lat: 37.790770, lng: -122.402015}; // Workshop Cafe
   var map = new google.maps.Map(document.getElementById('coffee-map'), {
     zoom: 13,
     center: cs1
@@ -35,6 +35,7 @@ var mapFunction = function() {
 
   // Coffee Marker 1 (Blue Bottle)
   var coffeeString1 = '<h5>Blue Bottle</h5>'+
+
             '<p>315 Linden St, San Francisco, CA 94102</p>'+
             '(510) 653-3394'+
             '<p><a href="https://bluebottlecoffee.com/cafes/kiosk" " target="_blank">Blue Bottle Coffee</a></p>';
@@ -197,61 +198,161 @@ var mapFunction = function() {
   //                 hike map                  //
   ///////////////////////////////////////////////
 
-  var hike1 = {lat: 37.785804, lng: -122.503377};
-  var hike2 = {lat: 37.759220, lng: -122.457230};
-  var hike3 = {lat: 37.768641, lng: -122.475318};
-  var hike4 = {lat: 37.741559, lng: -122.443185};
-  var hike5 = {lat: 37.800008, lng: -122.479518};
-  var hike6 = {lat: 37.765312, lng: -122.438585};
-  var hike7 = {lat: 37.739265, lng: -122.454509};
-  var hike8 = {lat: 37.768405, lng: -122.441415};
-  var hike9 = {lat: 37.756408, lng: -122.471740};
-  var hike10 = {lat: 37.746320, lng: -122.468838};
-
+  var hike1 = {lat: 37.785804, lng: -122.503377}; // Land's End
+  var hike2 = {lat: 37.759220, lng: -122.457230}; // Mount Sutro
+  var hike3 = {lat: 37.768641, lng: -122.475318}; // Strawberry Hill
+  var hike4 = {lat: 37.741559, lng: -122.443185}; // Glen Canyon Park
+  var hike5 = {lat: 37.800008, lng: -122.479518}; // Presidio
+  var hike6 = {lat: 37.765312, lng: -122.438585}; // Corona Heights
+  var hike7 = {lat: 37.739265, lng: -122.454509}; // Mt. Davidson
+  var hike8 = {lat: 37.768405, lng: -122.441415}; // Buena Vista Park
+  var hike9 = {lat: 37.756408, lng: -122.471740}; // Grandview Park
+  var hike10 = {lat: 37.746320, lng: -122.468838}; // Hawk Hill Park
   var hikeMap = new google.maps.Map(document.getElementById('hike-map'), {
     zoom: 13,
     center: hike8
   });
+
+  // Hike Pin 1
+  var hikeString1 = '<h5>Land\'s End</h5>'+
+            '<p><a href="https://www.nps.gov/goga/planyourvisit/landsend.htm" " target="_blank">Land\'s End Trails</a></p>';
+  var hikewindow1 = new google.maps.InfoWindow({
+    content: hikeString1
+  })
   var hikeMarker1 = new google.maps.Marker({
     position: hike1,
     map: hikeMap
   });
+  hikeMarker1.addListener('click', function(){
+    hikewindow1.open(map, hikeMarker1);
+  });
+
+  // Hike Pin 2
+  var hikeString2 = '<h5>Mount Sutro</h5>'+
+            '<p><a href="https://mntsutro.com" " target="_blank">Mount Sutro Trails</a></p>';
+  var hikewindow2 = new google.maps.InfoWindow({
+    content: hikeString2
+  })
   var hikeMarker2 = new google.maps.Marker({
     position: hike2,
     map: hikeMap
   });
+  hikeMarker2.addListener('click', function(){
+    hikewindow2.open(map, hikeMarker2);
+  });
+
+  // Hike Pin 3
+  var hikeString3 = '<h5>Strawberry Hill</h5>'+
+            '<p><a href="https://goldengatepark.com/strawberry-hill.html" " target="_blank">Strawberry Hill Hike</a></p>';
+  var hikewindow3 = new google.maps.InfoWindow({
+    content: hikeString3
+  })
   var hikeMarker3 = new google.maps.Marker({
     position: hike3,
     map: hikeMap
   });
+  hikeMarker3.addListener('click', function(){
+    hikewindow3.open(map, hikeMarker3);
+  });
+
+  // Hike Pin 4
+  var hikeString4 = '<h5>Glen Canyon Park</h5>'+
+            '<p><a href="http://bahiker.com/sfhikes/glencanyon.html" " target="_blank">Glen Canyon Trails</a></p>';
+  var hikewindow4 = new google.maps.InfoWindow({
+    content: hikeString4
+  })
   var hikeMarker4 = new google.maps.Marker({
     position: hike4,
     map: hikeMap
   });
+  hikeMarker4.addListener('click', function(){
+    hikewindow4.open(map, hikeMarker4);
+  });
+
+  // Hike Pin 5
+  var hikeString5 = '<h5>Presidio</h5>'+
+            '<p><a href="http://www.presidio.gov/Trails-internal/" " target="_blank">Presidio Trails</a></p>';
+  var hikewindow5 = new google.maps.InfoWindow({
+    content: hikeString5
+  })
   var hikeMarker5 = new google.maps.Marker({
     position: hike5,
     map: hikeMap
   });
+  hikeMarker5.addListener('click', function(){
+    hikewindow5.open(map, hikeMarker5);
+  });
+
+
+  // Hike Pin 6
+  var hikeString6 = '<h5>Corona Heights</h5>'+
+            '<p><a href="http://www.alltrails.com/trail/us/california/corona-heights-trail" " target="_blank">Corona Height\'s Trails</a></p>';
+  var hikewindow6 = new google.maps.InfoWindow({
+    content: hikeString6
+  })
   var hikeMarker6 = new google.maps.Marker({
     position: hike6,
     map: hikeMap
   });
+  hikeMarker6.addListener('click', function(){
+    hikewindow6.open(map, hikeMarker6);
+  });
+
+  // Hike Pin 7
+  var hikeString7 = '<h5>Mt. Davidson</h5>'+
+            '<p><a href="http://bahiker.com/sfhikes/davidson.html" " target="_blank">Mt. Davidson Trails</a></p>';
+  var hikewindow7 = new google.maps.InfoWindow({
+    content: hikeString7
+  })
   var hikeMarker7 = new google.maps.Marker({
     position: hike7,
     map: hikeMap
   });
+  hikeMarker7.addListener('click', function(){
+    hikewindow7.open(map, hikeMarker7);
+  });
+
+  // Hike Pin 8
+  var hikeString8 = '<h5>Buena Vista Park</h5>'+
+            '<p><a href="http://sfrecpark.org/destination/buena-vista-park/" " target="_blank">Buena Vista Park Trails</a></p>';
+  var hikewindow8 = new google.maps.InfoWindow({
+    content: hikeString8
+  })
   var hikeMarker8 = new google.maps.Marker({
     position: hike8,
     map: hikeMap
   });
+  hikeMarker8.addListener('click', function(){
+    hikewindow8.open(map, hikeMarker8);
+  });
+
+  // Hike Pin 9
+  var hikeString9 = '<h5>Grandview Park</h5>'+
+            '<p><a href="http://sfrecpark.org/destination/grand-view-park/" " target="_blank">Grandview Park Trails</a></p>';
+  var hikewindow9 = new google.maps.InfoWindow({
+    content: hikeString9
+  })
   var hikeMarker9 = new google.maps.Marker({
     position: hike9,
     map: hikeMap
   });
+  hikeMarker9.addListener('click', function(){
+    hikewindow9.open(map, hikeMarker9);
+  });
+
+  // Hike Pin 10
+  var hikeString10 = '<h5>Hawk Hill Park</h5>'+
+            '<p><a href="http://www.parksconservancy.org/visit/park-sites/hawk-hill.html" " target="_blank">Hawk Hill Park</a></p>';
+  var hikewindow10 = new google.maps.InfoWindow({
+    content: hikeString5
+  })
   var hikeMarker10 = new google.maps.Marker({
     position: hike10,
     map: hikeMap
   });
+  hikeMarker10.addListener('click', function(){
+    hikewindow10.open(map, hikeMarker10);
+  });
 
   /////////////////////////////////////////////////
   //                dinner map                   //
