@@ -1,6 +1,6 @@
 $(document).ready(function() {
   mapFunction();
-  $('#coffee-map').hide();
+  // $('#coffee-map').hide();
   $('#hike-map').hide();
   $('#dinner-map').hide();
   $('#pamper-map').hide();
@@ -18,7 +18,7 @@ var mapFunction = function() {
   //                cafe map                 //
   /////////////////////////////////////////////
 
-  var cs1 = {lat: 37.776175, lng: -122.423220};
+  var cs1 = {lat: 37.776175, lng: -122.423220}; // Blue Bottle
   var cs2 = {lat: 37.798641, lng: -122.407344};
   var cs3 = {lat: 37.763301, lng: -122.410755};
   var cs4 = {lat: 37.767019, lng: -122.421781};
@@ -26,20 +26,59 @@ var mapFunction = function() {
   var cs6 = {lat: 37.756439, lng: -122.421383};
   var cs7 = {lat: 37.776900, lng: -122.408637};
   var cs8 = {lat: 37.763162, lng: -122.465974};
-  var cs9 = {lat: 37.796751, lng: -122.436629};
-  var cs10 = {lat: 37.790770, lng: -122.402015};
+  var cs9 = {lat: 37.796751, lng: -122.436629}; // Wrecking Ball Coffee Rosters
+  var cs10 = {lat: 37.790770, lng: -122.402015}; //
   var map = new google.maps.Map(document.getElementById('coffee-map'), {
     zoom: 13,
     center: cs1
   });
+
+  // Cafe Marker 1
+  var contentString1 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h5 id="firstHeading" class="firstHeading">Blue Bottle</h5>'+
+            '<div id="bodyContent">'+
+            '<p>315 Linden St, San Francisco, CA 94102</p>'+
+            '(510) 653-3394'+
+            '<p><a href="https://bluebottlecoffee.com/cafes/kiosk"></p>'+
+            'https://bluebottlecoffee.com/cafes/kiosk</a> '+
+            '</div>'+
+            '</div>';
+
+  var infowindow1 = new google.maps.InfoWindow({
+    content: contentString1
+  })
   var csMarker1 = new google.maps.Marker({
     position: cs1,
     map: map
   });
+  csMarker1.addListener('click', function(){
+    infowindow1.open(map, csMarker1);
+  });
+
+
+
+
+
+  var contentString2 = 'test 2'
+
+  var infowindow2 = new google.maps.InfoWindow({
+    content: contentString2
+  })
+
   var csMarker2 = new google.maps.Marker({
     position: cs2,
     map: map
   });
+  csMarker2.addListener('click', function(){
+    infowindow2.open(map, csMarker2);
+  });
+
+
+
+
+
   var csMarker3 = new google.maps.Marker({
     position: cs3,
     map: map
