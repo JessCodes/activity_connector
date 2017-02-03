@@ -15,7 +15,7 @@ $(document).ready(function() {
 var mapFunction = function() {
 
   /////////////////////////////////////////////
-  //                cafe map                 //
+  //                coffee map                 //
   /////////////////////////////////////////////
 
   var cs1 = {lat: 37.776175, lng: -122.423220}; // Blue Bottle
@@ -33,84 +33,166 @@ var mapFunction = function() {
     center: cs1
   });
 
-  // Cafe Pin 1
-  var contentString1 = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h5 id="firstHeading" class="firstHeading">Blue Bottle</h5>'+
-            '<div id="bodyContent">'+
+  // Coffee Marker 1 (Blue Bottle)
+  var coffeeString1 = '<h5>Blue Bottle</h5>'+
+
             '<p>315 Linden St, San Francisco, CA 94102</p>'+
             '(510) 653-3394'+
-            '<p><a href="https://bluebottlecoffee.com/cafes/kiosk"></p>'+
-            'https://bluebottlecoffee.com/cafes/kiosk</a> '+
-            '</div>'+
-            '</div>';
-
-  var infowindow1 = new google.maps.InfoWindow({
-    content: contentString1
-  })
+            '<p><a href="https://bluebottlecoffee.com/cafes/kiosk" " target="_blank">Blue Bottle Coffee</a></p>';
+  var csWindow1 = new google.maps.InfoWindow({
+    content: coffeeString1
+  });
   var csMarker1 = new google.maps.Marker({
     position: cs1,
     map: map
   });
   csMarker1.addListener('click', function(){
-    infowindow1.open(map, csMarker1);
+    csWindow1.open(map, csMarker1);
   });
 
-
-
-
-
-  var contentString2 = 'test 2'
-
-  var infowindow2 = new google.maps.InfoWindow({
-    content: contentString2
-  })
-
+  // Coffee Marker 2 (Caffe Trieste)
+  var coffeeString2 = '<h5>Caffe Trieste</h5>'+
+            '<p>601 Vallejo St, San Francisco, CA 94133</p>'+
+            '(415) 982-2605'+
+            '<p><a href="http://coffee.caffetrieste.com/nbeach" " target="_blank">Caffe Trieste</a></p>';
+  var csWindow2 = new google.maps.InfoWindow({
+    content: coffeeString2
+  });
   var csMarker2 = new google.maps.Marker({
     position: cs2,
     map: map
   });
   csMarker2.addListener('click', function(){
-    infowindow2.open(map, csMarker2);
+    csWindow2.open(map, csMarker2);
   });
 
-
-
-
-
+  // Coffee Marker 3 (Coffee Bar)
+  var coffeeString3 = '<h5>Coffee Bar</h5>'+
+            '<p>1890 Bryant St, San Francisco, CA 94110</p>'+
+            '(415) 551-8100'+
+            '<p><a href="http://www.coffeebarsf.com/bryant-st" " target="_blank">Coffee Bar</a></p>';
+  var csWindow3 = new google.maps.InfoWindow({
+    content: coffeeString3
+  });
   var csMarker3 = new google.maps.Marker({
     position: cs3,
     map: map
   });
+  csMarker3.addListener('click', function(){
+    csWindow3.open(map, csMarker3);
+  });
+
+  // Coffee Marker 4 (Fourbarrel Coffee)
+  var coffeeString4 = '<h5>Fourbarrel Coffee</h5>'+
+            '<p>375 Valencia St, San Francisco, CA 94103</p>'+
+            '(415) 896-4289'+
+            '<p><a href="http://www.fourbarrelcoffee.com/pages/about-us " " target="_blank">Fourbarrel Coffee</a></p>';
+  var csWindow4 = new google.maps.InfoWindow({
+    content: coffeeString4
+  });
   var csMarker4 = new google.maps.Marker({
     position: cs4,
     map: map
   });
+  csMarker4.addListener('click', function(){
+    csWindow4.open(map, csMarker4);
+  });
+
+  // Coffee Marker 5 (Philz Coffee)
+  var coffeeString5 = '<h5>Philz Coffee</h5>'+
+            '<p>3101 24th St, San Francisco, CA 94110</p>'+
+            '(415) 875-9370'+
+            '<p><a href="http://www.philzcoffee.com/locations-sf" " target="_blank">Philz Coffee</a></p>';
+  var csWindow5 = new google.maps.InfoWindow({
+    content: coffeeString5
+  });
   var csMarker5 = new google.maps.Marker({
     position: cs5,
     map: map
   });
+  csMarker5.addListener('click', function(){
+    csWindow5.open(map, csMarker5);
+  });
+
+  // Coffee Marker 6 (Ritual Coffee Roasters)
+  var coffeeString6 = '<h5>Ritual Coffee Roasters</h5>'+
+            '<p>1026 Valencia St, San Francisco, CA 94110</p>'+
+            '(415) 641-1011'+
+            '<p><a href="http://www.ritualroasters.com/" " target="_blank">Ritual Coffee Roasters</a></p>';
+  var csWindow6 = new google.maps.InfoWindow({
+    content: coffeeString6
+  });
   var csMarker6 = new google.maps.Marker({
     position: cs6,
     map: map
   });
+  csMarker6.addListener('click', function(){
+    csWindow6.open(map, csMarker6);
+  });
+
+  // Coffee Marker 7 (Sightglass Coffee)
+  var coffeeString7 = '<h5>Sightglass Coffee</h5>'+
+            '<p>270 7th Street San Francisco, CA 94103</p>'+
+            '(415) 861-1313'+
+            '<p><a href="https://sightglasscoffee.com/visit/soma" " target="_blank">Sightglass Coffee</a></p>';
+  var csWindow7 = new google.maps.InfoWindow({
+    content: coffeeString7
+  });
   var csMarker7 = new google.maps.Marker({
     position: cs7,
     map: map
   });
+  csMarker7.addListener('click', function(){
+    csWindow7.open(map, csMarker7);
+  });
+
+  // Coffee Marker 8 (Snowbird Coffee)
+  var coffeeString8 = '<h5>Snowbird Coffee</h5>'+
+            '<p>1352 9th Ave A, San Francisco, CA 94122</p>'+
+            '(415) 573-7740'+
+            '<p><a href="http://snowbirdcoffee.com/about.html" " target="_blank">Snowbird Coffee</a></p>';
+  var csWindow8 = new google.maps.InfoWindow({
+    content: coffeeString8
+  });
   var csMarker8 = new google.maps.Marker({
     position: cs8,
     map: map
   });
+  csMarker8.addListener('click', function(){
+    csWindow8.open(map, csMarker8);
+  });
+
+  // Coffee Marker 9 (Wrecking Ball)
+  var coffeeString9 = '<h5>Wrecking Ball</h5>'+
+            '<p>2271 Union Street, San Francisco, CA 94123</p>'+
+            '(415) 638-9227'+
+            '<p><a href="http://www.wreckingballcoffee.com/pages/our-locations" " target="_blank">Wrecking Ball</a></p>';
+  var csWindow9 = new google.maps.InfoWindow({
+    content: coffeeString9
+  });
   var csMarker9 = new google.maps.Marker({
     position: cs9,
     map: map
   });
+  csMarker9.addListener('click', function(){
+    csWindow9.open(map, csMarker9);
+  });
+
+  // Coffee Marker 10 (Workshop Cafe)
+  var coffeeString10 = '<h5>Workshop Cafe</h5>'+
+            '<p>180 Montgomery St #100, San Francisco, CA 94104</p>'+
+            '(415) 322-1048'+
+            '<p><a href="http://www.workshopcafe.com/" " target="_blank">Workshop Cafe</a></p>';
+  var csWindow10 = new google.maps.InfoWindow({
+    content: coffeeString10
+  });
   var csMarker10 = new google.maps.Marker({
     position: cs10,
     map: map
   });
+  csMarker10.addListener('click', function(){
+    csWindow10.open(map, csMarker10);
+  });
 
   ///////////////////////////////////////////////
   //                 hike map                  //
