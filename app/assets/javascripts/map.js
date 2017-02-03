@@ -6,11 +6,11 @@ $(document).ready(function() {
   $('#pamper-map').hide();
   $('#movie-map').hide();
   $('#tourist-map').hide();
+  // $('#dinner-button').click(function(){
+  //   $('#dinner-map').toggle();
+  // });
 });
 
-// $('#coffee-button').click(function(){
-//   $('#coffee-map').toggle();
-// });
 
 var mapFunction = function() {
 
