@@ -1,7 +1,7 @@
 $(document).ready(function() {
   mapFunction();
   // $('#coffee-map').hide();
-  $('#hike-map').hide();
+  // $('#hike-map').hide();
   $('#dinner-map').hide();
   $('#pamper-map').hide();
   $('#movie-map').hide();
@@ -33,7 +33,7 @@ var mapFunction = function() {
     center: cs1
   });
 
-  // Cafe Marker 1
+  // Cafe Pin 1
   var contentString1 = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
@@ -126,27 +126,68 @@ var mapFunction = function() {
   var hike8 = {lat: 37.768405, lng: -122.441415}; // Buena Vista Park
   var hike9 = {lat: 37.756408, lng: -122.471740}; // Grandview Park
   var hike10 = {lat: 37.746320, lng: -122.468838}; // Hawk Hill Park
-
   var hikeMap = new google.maps.Map(document.getElementById('hike-map'), {
     zoom: 13,
     center: hike8
   });
+
+  // Hike Pin 1
+  var hikeString1 = '<h5>Land\'s End</h5>'+
+            '<p><a href="https://www.nps.gov/goga/planyourvisit/landsend.htm" " target="_blank">Land\'s End Trails</a></p>';
+  var hikewindow1 = new google.maps.InfoWindow({
+    content: hikeString1
+  })
   var hikeMarker1 = new google.maps.Marker({
     position: hike1,
     map: hikeMap
   });
+  hikeMarker1.addListener('click', function(){
+    hikewindow1.open(map, hikeMarker1);
+  });
+
+  // Hike Pin 2
+  var hikeString2 = '<h5>Mount Sutro</h5>'+
+            '<p><a href="https://mntsutro.com" " target="_blank">Mount Sutro Trails</a></p>';
+  var hikewindow2 = new google.maps.InfoWindow({
+    content: hikeString2
+  })
   var hikeMarker2 = new google.maps.Marker({
     position: hike2,
     map: hikeMap
   });
+  hikeMarker2.addListener('click', function(){
+    hikewindow2.open(map, hikeMarker2);
+  });
+
+  // Hike Pin 3
+  var hikeString3 = '<h5>Strawberry Hill</h5>'+
+            '<p><a href="https://goldengatepark.com/strawberry-hill.html" " target="_blank">Strawberry Hill Hike</a></p>';
+  var hikewindow3 = new google.maps.InfoWindow({
+    content: hikeString3
+  })
   var hikeMarker3 = new google.maps.Marker({
     position: hike3,
     map: hikeMap
   });
+  hikeMarker3.addListener('click', function(){
+    hikewindow3.open(map, hikeMarker3);
+  });
+
+  // Hike Pin 4
+  var hikeString4 = '<h5>Glen Canyon Park</h5>'+
+            '<p><a href="http://bahiker.com/sfhikes/glencanyon.html" " target="_blank">Glen Canyon Trails</a></p>';
+  var hikewindow4 = new google.maps.InfoWindow({
+    content: hikeString4
+  })
   var hikeMarker4 = new google.maps.Marker({
     position: hike4,
     map: hikeMap
   });
+  hikeMarker4.addListener('click', function(){
+    hikewindow4.open(map, hikeMarker4);
+  });
+
+  // Hike Pin 5
   var hikeMarker5 = new google.maps.Marker({
     position: hike5,
     map: hikeMap
