@@ -188,30 +188,89 @@ var mapFunction = function() {
   });
 
   // Hike Pin 5
+  var hikeString5 = '<h5>Presidio</h5>'+
+            '<p><a href="http://www.presidio.gov/Trails-internal/" " target="_blank">Presidio Trails</a></p>';
+  var hikewindow5 = new google.maps.InfoWindow({
+    content: hikeString5
+  })
   var hikeMarker5 = new google.maps.Marker({
     position: hike5,
     map: hikeMap
   });
+  hikeMarker5.addListener('click', function(){
+    hikewindow5.open(map, hikeMarker5);
+  });
+
+
+  // Hike Pin 6
+  var hikeString6 = '<h5>Corona Heights</h5>'+
+            '<p><a href="http://www.alltrails.com/trail/us/california/corona-heights-trail" " target="_blank">Corona Height\'s Trails</a></p>';
+  var hikewindow6 = new google.maps.InfoWindow({
+    content: hikeString6
+  })
   var hikeMarker6 = new google.maps.Marker({
     position: hike6,
     map: hikeMap
   });
+  hikeMarker6.addListener('click', function(){
+    hikewindow6.open(map, hikeMarker6);
+  });
+
+  // Hike Pin 7
+  var hikeString7 = '<h5>Mt. Davidson</h5>'+
+            '<p><a href="http://bahiker.com/sfhikes/davidson.html" " target="_blank">Mt. Davidson Trails</a></p>';
+  var hikewindow7 = new google.maps.InfoWindow({
+    content: hikeString7
+  })
   var hikeMarker7 = new google.maps.Marker({
     position: hike7,
     map: hikeMap
   });
+  hikeMarker7.addListener('click', function(){
+    hikewindow7.open(map, hikeMarker7);
+  });
+
+  // Hike Pin 8
+  var hikeString8 = '<h5>Buena Vista Park</h5>'+
+            '<p><a href="http://sfrecpark.org/destination/buena-vista-park/" " target="_blank">Buena Vista Park Trails</a></p>';
+  var hikewindow8 = new google.maps.InfoWindow({
+    content: hikeString8
+  })
   var hikeMarker8 = new google.maps.Marker({
     position: hike8,
     map: hikeMap
   });
+  hikeMarker8.addListener('click', function(){
+    hikewindow8.open(map, hikeMarker8);
+  });
+
+  // Hike Pin 9
+  var hikeString9 = '<h5>Grandview Park</h5>'+
+            '<p><a href="http://sfrecpark.org/destination/grand-view-park/" " target="_blank">Grandview Park Trails</a></p>';
+  var hikewindow9 = new google.maps.InfoWindow({
+    content: hikeString9
+  })
   var hikeMarker9 = new google.maps.Marker({
     position: hike9,
     map: hikeMap
   });
+  hikeMarker9.addListener('click', function(){
+    hikewindow9.open(map, hikeMarker9);
+  });
+
+  // Hike Pin 10
+  var hikeString10 = '<h5>Hawk Hill Park</h5>'+
+            '<p><a href="http://www.parksconservancy.org/visit/park-sites/hawk-hill.html" " target="_blank">Hawk Hill Park</a></p>';
+  var hikewindow10 = new google.maps.InfoWindow({
+    content: hikeString5
+  })
   var hikeMarker10 = new google.maps.Marker({
     position: hike10,
     map: hikeMap
   });
+  hikeMarker10.addListener('click', function(){
+    hikewindow10.open(map, hikeMarker10);
+  });
 
   /////////////////////////////////////////////////
   //                dinner map                   //
