@@ -28,4 +28,31 @@
 
 ## Hike Map
 1. Land's End
-2. 
+    - https://www.nps.gov/goga/planyourvisit/landsend.htm
+
+2. Mount Sutro
+    - https://mntsutro.com
+
+3. Strawberry Hill
+    - https://goldengatepark.com/strawberry-hill.html
+
+4. Glen Canyon Park
+    - http://bahiker.com/sfhikes/glencanyon.html
+
+5. Presidio
+    - http://www.presidio.gov/Trails-internal/
+
+6. Corona Heights
+    - http://www.alltrails.com/trail/us/california/corona-heights-trail
+
+7. Mt. Davidson
+    - http://bahiker.com/sfhikes/davidson.html
+
+8. Buena Vista Park
+    - http://sfrecpark.org/destination/buena-vista-park/
+
+9. Grandview Park
+    - http://sfrecpark.org/destination/grand-view-park/
+
+10. Hawk Hill Park
+    - http://www.parksconservancy.org/visit/park-sites/hawk-hill.html

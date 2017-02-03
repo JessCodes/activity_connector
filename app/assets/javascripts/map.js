@@ -119,11 +119,11 @@ var mapFunction = function() {
   var hike1 = {lat: 37.785804, lng: -122.503377}; // Land's End
   var hike2 = {lat: 37.759220, lng: -122.457230}; // Mount Sutro
   var hike3 = {lat: 37.768641, lng: -122.475318}; // Strawberry Hill
-  var hike4 = {lat: 37.741559, lng: -122.443185}; // Diamond Heights?
-  var hike5 = {lat: 37.800008, lng: -122.479518}; // Battery to Bluffs Trail
+  var hike4 = {lat: 37.741559, lng: -122.443185}; // Glen Canyon Park
+  var hike5 = {lat: 37.800008, lng: -122.479518}; // Presidio
   var hike6 = {lat: 37.765312, lng: -122.438585}; // Corona Heights
   var hike7 = {lat: 37.739265, lng: -122.454509}; // Mt. Davidson
-  var hike8 = {lat: 37.768405, lng: -122.441415}; // Buena Vista
+  var hike8 = {lat: 37.768405, lng: -122.441415}; // Buena Vista Park
   var hike9 = {lat: 37.756408, lng: -122.471740}; // Grandview Park
   var hike10 = {lat: 37.746320, lng: -122.468838}; // Hawk Hill Park
 
