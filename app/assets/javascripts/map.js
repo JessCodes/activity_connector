@@ -35,7 +35,6 @@ var mapFunction = function() {
 
   // Coffee Marker 1 (Blue Bottle)
   var coffeeString1 = '<h5>Blue Bottle</h5>'+
-
             '<p>315 Linden St, San Francisco, CA 94102</p>'+
             '(510) 653-3394'+
             '<p><a href="https://bluebottlecoffee.com/cafes/kiosk" " target="_blank">Blue Bottle Coffee</a></p>';
@@ -373,46 +372,168 @@ var mapFunction = function() {
     zoom: 13,
     center: dinner1
   });
+
+  // Dinner Pin 1
+  var dinnerString1 = '<h5>Nopa</h5>'+
+            '<p>560 Divisadero St, San Francisco, CA 94117</p>'+
+            '(415) 864-8643'+
+            '<p><a href="nopasf.com" " target="_blank">Nopa</a></p>';
+  var dinnerwindow1 = new google.maps.InfoWindow({
+    content: dinnerString1
+  })
   var dinnerMarker1 = new google.maps.Marker({
     position: dinner1,
     map: dinnerMap
   });
+  dinnerMarker1.addListener('click', function(){
+    dinnerwindow1.open(map, dinnerMarker1);
+  });
+
+  //Dinner Pin 2
+  var dinnerString2 = '<h5>Foreign Cinema</h5>'+
+            '<p>2534 Mission St, San Francisco, CA 94110</p>'+
+            '(415) 648-7600'+
+            '<p><a href="www.foreigncinema.com/" " target="_blank">Foreign Cinema</a></p>';
+  var dinnerwindow2 = new google.maps.InfoWindow({
+    content: dinnerString2
+  })
   var dinnerMarker2 = new google.maps.Marker({
     position: dinner2,
     map: dinnerMap
   });
+  dinnerMarker2.addListener('click', function(){
+    dinnerwindow2.open(map, dinnerMarker2);
+  });
+
+  // Dinner Pin 3
+  var dinnerString3 = '<h5>Shizen</h5>'+
+            '<p>370 14th St, San Francisco, CA 94103</p>'+
+            '(415) 678-5767'+
+            '<p><a href="https://www.facebook.com/ShizenSF" " target="_blank">Shizen Vegan Sushi Bar & Izakaya</a></p>';
+  var dinnerwindow3 = new google.maps.InfoWindow({
+    content: dinnerString3
+  })
   var dinnerMarker3 = new google.maps.Marker({
     position: dinner3,
     map: dinnerMap
   });
+
+  dinnerMarker3.addListener('click', function(){
+    dinnerwindow3.open(map, dinnerMarker3);
+  });
+
+  // Dinner Pin 4
+  var dinnerString4 = '<h5>Al\'s Place</h5>'+
+            '<p>1499 Valencia St, San Francisco, CA 94110</p>'+
+            '(415) 416-6136'+
+            '<p><a href="www.alsplacesf.com/" " target="_blank">Al\'s Place</a></p>';
+  var dinnerwindow4 = new google.maps.InfoWindow({
+    content: dinnerString4
+  })
   var dinnerMarker4 = new google.maps.Marker({
     position: dinner4,
     map: dinnerMap
   });
+  dinnerMarker4.addListener('click', function(){
+    dinnerwindow4.open(map, dinnerMarker4);
+  });
+
+  // Dinner Pin 5
+  var dinnerString5 = '<h5>Greens Restaurant</h5>'+
+            '<p>Landmark Building A, Fort Mason Center, 2 Marina Blvd, San Francisco, CA 94123</p>'+
+            '(415) 771-6222'+
+            '<p><a href="greensrestaurant.com/" " target="_blank">Greens Restaurant</a></p>';
+  var dinnerwindow5 = new google.maps.InfoWindow({
+    content: dinnerString5
+  })
   var dinnerMarker5 = new google.maps.Marker({
     position: dinner5,
     map: dinnerMap
   });
+  dinnerMarker5.addListener('click', function(){
+    dinnerwindow5.open(map, dinnerMarker5);
+  });
+
+  // Dinner Pin 6
+  var dinnerString6 = '<h5>Locanda</h5>'+
+            '<p>557 Valencia St, San Francisco, CA 94110</p>'+
+            '(415) 863-6800'+
+            '<p><a href="www.locandasf.com/" " target="_blank">Locanda</a></p>';
+  var dinnerwindow6 = new google.maps.InfoWindow({
+    content: dinnerString6
+  })
   var dinnerMarker6 = new google.maps.Marker({
     position: dinner6,
     map: dinnerMap
   });
+  dinnerMarker6.addListener('click', function(){
+    dinnerwindow6.open(map, dinnerMarker6);
+  });
+
+  // Dinner Pin 7
+  var dinnerString7 = '<h5>Firefly Restaurant</h5>'+
+            '<p>4288 24th St, San Francisco, CA 94114</p>'+
+            '(415) 821-7652'+
+            '<p><a href="www.fireflysf.com/" " target="_blank">Firefly Restaurant</a></p>';
+  var dinnerwindow7 = new google.maps.InfoWindow({
+    content: dinnerString7
+  })
   var dinnerMarker7 = new google.maps.Marker({
     position: dinner7,
     map: dinnerMap
   });
+  dinnerMarker7.addListener('click', function(){
+    dinnerwindow7.open(map, dinnerMarker7);
+  });
+
+  //Dinner Pin 8
+  var dinnerString8 = '<h5>Nopalito</h5>'+
+            '<p>1224 9th Ave, San Francisco, CA 94122</p>'+
+            '(415) 233-9966'+
+            '<p><a href="www.nopalitosf.com/" " target="_blank">Nopalito</a></p>';
+  var dinnerwindow8 = new google.maps.InfoWindow({
+    content: dinnerString8
+  })
   var dinnerMarker8 = new google.maps.Marker({
     position: dinner8,
     map: dinnerMap
   });
+  dinnerMarker8.addListener('click', function(){
+    dinnerwindow8.open(map, dinnerMarker8);
+  });
+  
+  // Dinner Pin 9
+  var dinnerString9 = '<h5>Straw</h5>'+
+            '<p>203 Octavia Blvd, San Francisco, CA 94102</p>'+
+            '(415) 431-3663'+
+            '<p><a href="www.strawsf.com" " target="_blank">Straw</a></p>';
+  var dinnerwindow9 = new google.maps.InfoWindow({
+    content: dinnerString9
+  })
   var dinnerMarker9 = new google.maps.Marker({
     position: dinner9,
     map: dinnerMap
   });
+  dinnerMarker9.addListener('click', function(){
+    dinnerwindow9.open(map, dinnerMarker9);
+  });
+
+  // Dinner Pin 10
+  var dinnerString10 = '<h5>Burma Superstar</h5>'+
+            '<p>309 Clement St, San Francisco, CA 94118</p>'+
+            '(415) 387-2147'+
+            '<p><a href="www.burmasuperstar.com/" " target="_blank">Burma Superstar</a></p>';
+  var dinnerwindow10 = new google.maps.InfoWindow({
+    content: dinnerString10
+  })
   var dinnerMarker10 = new google.maps.Marker({
     position: dinner10,
     map: dinnerMap
   });
+  dinnerMarker10.addListener('click', function(){
+    dinnerwindow10.open(map, dinnerMarker10);
+  });
+
 
   /////////////////////////////////////////////////
   //                 pamper map                  //

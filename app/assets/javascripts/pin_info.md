@@ -70,9 +70,9 @@
     - 2534 Mission St, San Francisco, CA 94110
     - (415) 648-7600
     - www.foreigncinema.com/
-3. Shizen
-    - Shizen Vegan Sushi Bar & Izakaya
+3. Shizen Vegan Sushi Bar & Izakaya
     - 370 14th St, San Francisco, CA 94103
+    - (415) 678-5767
     - https://www.facebook.com/ShizenSF
 4. Al's Place
     - 1499 Valencia St, San Francisco, CA 94110
