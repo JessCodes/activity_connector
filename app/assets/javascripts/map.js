@@ -358,16 +358,16 @@ var mapFunction = function() {
   //                dinner map                   //
   /////////////////////////////////////////////////
 
-  var dinner1 = {lat: 37.774903, lng: -122.437474};
-  var dinner2 = {lat: 37.756415, lng: -122.419180};
-  var dinner3 = {lat: 37.768360, lng: -122.421768};
-  var dinner4 = {lat: 37.749040, lng: -122.420157};
-  var dinner5 = {lat: 37.806822, lng: -122.431773};
-  var dinner6 = {lat: 37.764072, lng: -122.421699};
-  var dinner7 = {lat: 37.751233, lng: -122.438257};
-  var dinner8 = {lat: 37.765440, lng: -122.466208};
-  var dinner9 = {lat: 37.774041, lng: -122.424244};
-  var dinner10 = {lat: 37.782831, lng: -122.462555};
+  var dinner1 = {lat: 37.774903, lng: -122.437474}; // NOPA
+  var dinner2 = {lat: 37.756415, lng: -122.419180}; // Foreign Cinema
+  var dinner3 = {lat: 37.768360, lng: -122.421768}; // Shizen
+  var dinner4 = {lat: 37.749040, lng: -122.420157}; // Al's Place
+  var dinner5 = {lat: 37.806822, lng: -122.431773}; // Greens Restaurant
+  var dinner6 = {lat: 37.764072, lng: -122.421699}; // Locanda
+  var dinner7 = {lat: 37.751233, lng: -122.438257}; // Firefly Restaurant
+  var dinner8 = {lat: 37.765440, lng: -122.466208}; // Nopalito
+  var dinner9 = {lat: 37.774041, lng: -122.424244}; // Straw
+  var dinner10 = {lat: 37.782831, lng: -122.462555}; // Burma Superstar
 
   var dinnerMap = new google.maps.Map(document.getElementById('dinner-map'), {
     zoom: 13,
@@ -418,16 +418,16 @@ var mapFunction = function() {
   //                 pamper map                  //
   /////////////////////////////////////////////////
 
-  var pamper1 = {lat: 37.801968, lng: -122.450005};
-  var pamper2 = {lat: 37.788614, lng: -122.433542};
-  var pamper3 = {lat: 37.786314, lng: -122.401322};
-  var pamper4 = {lat: 37.797358, lng: -122.435773};
-  var pamper5 = {lat: 37.791399, lng: -122.412086};
-  var pamper6 = {lat: 37.793689, lng: -122.393299};
-  var pamper7 = {lat: 37.784510, lng: -122.406709};
-  var pamper8 = {lat: 37.784838, lng: -122.432496};
-  var pamper9 = {lat: 37.786794, lng: -122.394229};
-  var pamper10 = {lat: 37.781512, lng: -122.396465};
+  var pamper1 = {lat: 37.801968, lng: -122.450005}; // Senspa
+  var pamper2 = {lat: 37.788614, lng: -122.433542}; // International Orange
+  var pamper3 = {lat: 37.786314, lng: -122.401322}; // Remède Spa
+  var pamper4 = {lat: 37.797358, lng: -122.435773}; // Spa Radiance
+  var pamper5 = {lat: 37.791399, lng: -122.412086}; // Nob Hill Spa
+  var pamper6 = {lat: 37.793689, lng: -122.393299}; // Spa Vitale
+  var pamper7 = {lat: 37.784510, lng: -122.406709}; // Burke Williams Day Spa
+  var pamper8 = {lat: 37.784838, lng: -122.432496}; // Kabuki
+  var pamper9 = {lat: 37.786794, lng: -122.394229}; // Cocoon Urban Day Spa
+  var pamper10 = {lat: 37.781512, lng: -122.396465}; // Polished Nest
 
   var pamperMap = new google.maps.Map(document.getElementById('pamper-map'), {
     zoom: 14,
