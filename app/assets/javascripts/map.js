@@ -697,34 +697,84 @@ var mapFunction = function() {
   });
 
   // Movie Pin 6
+  var movieString6 = '<h5>Alamo Drafthouse Cinema</h5>'+
+            '<p>2550 Mission St, San Francisco, CA 94110</p>'+
+            '(415) 549-5959'+
+            '<p><a href="https://drafthouse.com/sf" " target="_blank">Alamo Drafthouse Cinema</a></p>';
+  var movieWindow6 = new google.maps.InfoWindow({
+    content: movieString6
+  });
   var movieMarker6 = new google.maps.Marker({
     position: movie6,
     map: movieMap
   });
+  movieMarker6.addListener('click', function(){
+    movieWindow6.open(map, movieMarker6);
+  });
 
   // Movie Pin 7
+  var movieString7 = '<h5>Victoria Theatre</h5>'+
+            '<p>2961 16th St, San Francisco, CA 94103</p>'+
+            '(415) 863-7576'+
+            '<p><a href="http://www.victoriatheatre.org/" " target="_blank">Victoria Theatre</a></p>';
+  var movieWindow7 = new google.maps.InfoWindow({
+    content: movieString7
+  });
   var movieMarker7 = new google.maps.Marker({
     position: movie7,
     map: movieMap
   });
+  movieMarker7.addListener('click', function(){
+    movieWindow7.open(map, movieMarker7);
+  });
 
   // Movie Pin 8
+  var movieString8 = '<h5>AMC Metreon 16</h5>'+
+            '<p>Metreon, 135 4th St #3000, San Francisco, CA 94103</p>'+
+            '(415) 369-6207'+
+            '<p><a href="https://www.amctheatres.com/movie-theatres/san-francisco/amc-metreon-16" " target="_blank">AMC Metreon 16</a></p>';
+  var movieWindow8 = new google.maps.InfoWindow({
+    content: movieString8
+  });
   var movieMarker8 = new google.maps.Marker({
     position: movie8,
     map: movieMap
   });
+  movieMarker8.addListener('click', function(){
+    movieWindow8.open(map, movieMarker8);
+  });
 
   // Movie Pin 9
+  var movieString9 = '<h5>Clay Theatre</h5>'+
+            '<p>2261 Fillmore St, San Francisco, CA 94115</p>'+
+            '(415) 561-9921'+
+            '<p><a href="https://www.landmarktheatres.com/san-francisco/clay-theatre" " target="_blank">Clay Theatre</a></p>';
+  var movieWindow9 = new google.maps.InfoWindow({
+    content: movieString9
+  });
   var movieMarker9 = new google.maps.Marker({
     position: movie9,
     map: movieMap
   });
+  movieMarker9.addListener('click', function(){
+    movieWindow9.open(map, movieMarker9);
+  });
 
   // Movie Pin 10
+  var movieString10 = '<h5>Curran Theatre</h5>'+
+            '<p>445 Geary St, San Francisco, CA 94102</p>'+
+            '(415) 358-1220'+
+            '<p><a href="https://sfcurran.com/" " target="_blank">Curran Theatre</a></p>';
+  var movieWindow10 = new google.maps.InfoWindow({
+    content: movieString10
+  });
   var movieMarker10 = new google.maps.Marker({
     position: movie10,
     map: movieMap
   });
+  movieMarker10.addListener('click', function(){
+    movieWindow10.open(map, movieMarker10);
+  });
 
   ////////////////////////////////////////////
   //              tourist map               //
