@@ -4,7 +4,7 @@ $(document).ready(function() {
   // $('#hike-map').hide();
   // $('#dinner-map').hide();
   $('#pamper-map').hide();
-  $('#movie-map').hide();
+  // $('#movie-map').hide();
   $('#tourist-map').hide();
   // $('#dinner-button').click(function(){
   //   $('#dinner-map').toggle();
