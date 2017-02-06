@@ -146,7 +146,7 @@
     - www.polishednest.com/
 
 ## Movie Map
-1. The Castro Theater
+1. The Castro Theatre
     - 429 Castro St, San Francisco, CA 94114
     - (415) 621-6120
     - http://www.castrotheatre.com/
