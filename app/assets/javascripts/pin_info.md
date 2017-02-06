@@ -146,6 +146,90 @@
     - www.polishednest.com/
 
 ## Movie Map
-## Tourist Map
+1. The Castro Theatre
+    - 429 Castro St, San Francisco, CA 94114
+    - (415) 621-6120
+    - http://www.castrotheatre.com/
+2. Landmark Theaters Embarcadero Center Cinema
+    - Embarcadero Center, 1 Embarcadero Center, San Francisco, CA 94111
+    - (415) 352-0835
+    - https://www.landmarktheatres.com/san-francisco/embarcadero-center-cinema
+3. Sundance Kabuki
+    - 1881 Post St, San Francisco, CA 94115
+    - (415) 346-3243
+    - https://www.sundancecinemas.com/theater/7728
+4. Roxie Theatre
+    - 3117 16th St, San Francisco, CA 94103
+    - (415) 863-1087
+    - http://www.roxie.com/
+5. 4-Star Theatre
+    - 2200 Clement St, San Francisco, CA 94121
+    - (415) 666-3488
+    - http://www.hkinsf.com/4star/
+6. Alamo Drafthouse Cinema
+    - 2550 Mission St, San Francisco, CA 94110
+    - (415) 549-5959
+    - https://drafthouse.com/sf
+7. Victoria Theatre
+    - 2961 16th St, San Francisco, CA 94103
+    - (415) 863-7576
+    - http://www.victoriatheatre.org/
+8. AMC Metreon 16
+    - Metreon, 135 4th St #3000, San Francisco, CA 94103
+    - (415) 369-6207
+    - https://www.amctheatres.com/movie-theatres/san-francisco/amc-metreon-16
+9. Clay Theatre
+    - 2261 Fillmore St, San Francisco, CA 94115
+    - (415) 561-9921
+    - https://www.landmarktheatres.com/san-francisco/clay-theatre
+10. Curran Theatre
+    - 445 Geary St, San Francisco, CA 94102
+    - (415) 358-1220
+    - https://sfcurran.com/
 
+## Tourist Map
+1. Alcatraz Island
+    - Alcatraz Island, Golden Gate National Recreation Area, B201 Fort Mason San Francisco, CA 94123
+    - (415) 561-4900 
+    - https://www.nps.gov/alca/index.htm
+2. Golden Gate Bridge
+    - Golden Gate Bridge, San Francisco, CA
+    - http://goldengatebridge.org/
+3. Golden Gate Park
+    - San Francisco, CA 94122
+    - https://goldengatepark.com/
+4. Cal Academy of Sciences
+    - 55 Music Concourse Dr, San Francisco, CA 94118
+    - (415) 379-8000
+    - http://www.calacademy.org/
+5. San Francisco Museum of Modern Art
+    - 151 3rd St, San Francisco, CA 94103
+    - (415) 357-4000
+    - https://www.sfmoma.org/
+6. Twin Peaks
+    - 501 Twin Peaks Blvd, San Francisco, CA 94114
+    - (415) 831-6331
+    - https://en.wikipedia.org/wiki/Twin_Peaks_(San_Francisco)
+7. Exploratorium
+    - Pier 15, The Embarcadero & Green St., San Francisco, CA 94111
+    - (415) 528-4444
+    - https://www.exploratorium.edu/
+8. Palace of Fine Arts
+    - 3301 Lyon St, San Francisco, CA 94123
+    - https://palaceoffinearts.org/
+9. AT&T Park
+    - 24 Willie Mays Plaza, San Francisco, CA 94107
+    - (415) 972-2000
+    - http://sanfrancisco.giants.mlb.com/sf/ballpark/information/
+10. de Young Museum
+    - 50 Hagiwara Tea Garden Dr, San Francisco, CA 94118
+    - (415) 750-3600
+    - https://deyoung.famsf.org/
+11. Crissy Field
+    - (415) 561-4700
+    - http://www.parksconservancy.org/visit/park-sites/crissy-field.html
+12. San Francisco Symphony
+    - 201 Van Ness Ave, San Francisco, CA 94102
+    - (415) 864-6000
+    - https://www.sfsymphony.org/
 

@@ -3,14 +3,14 @@ $(document).ready(function() {
   // $('#coffee-map').hide();
   // $('#hike-map').hide();
   // $('#dinner-map').hide();
-  $('#pamper-map').hide();
-  $('#movie-map').hide();
-  $('#tourist-map').hide();
+  // $('#dinner-button').click(function(){
+  //   $('#dinner-map').toggle();
+  // });
+  // $('#pamper-map').hide();
+  // $('#movie-map').hide();
+  // $('#tourist-map').hide();
 });
 
-// $('#coffee-button').click(function(){
-//   $('#coffee-map').toggle();
-// });
 
 var mapFunction = function() {
 
@@ -614,46 +614,167 @@ var mapFunction = function() {
     zoom: 13,
     center: movie3
   });
+
+  // Movie Pin 1
+  var movieString1 = '<h5>The Castro Theatre</h5>'+
+            '<p>429 Castro St, San Francisco, CA 94114</p>'+
+            '(415) 621-6120'+
+            '<p><a href="http://www.castrotheatre.com/" " target="_blank">The Castro Theatre</a></p>';
+  var movieWindow1 = new google.maps.InfoWindow({
+    content: movieString1
+  });
   var movieMarker1 = new google.maps.Marker({
     position: movie1,
     map: movieMap
   });
+  movieMarker1.addListener('click', function(){
+    movieWindow1.open(map, movieMarker1);
+  });
+
+  // Movie Pin 2
+  var movieString2 = '<h5>Landmark Theaters Embarcadero Center Cinema</h5>'+
+            '<p>Embarcadero Center, 1 Embarcadero Center, San Francisco, CA 94111</p>'+
+            '(415) 352-0835'+
+            '<p><a href="https://www.landmarktheatres.com/san-francisco/embarcadero-center-cinema" " target="_blank">Landmark Theaters Embarcadero Center Cinema</a></p>';
+  var movieWindow2 = new google.maps.InfoWindow({
+    content: movieString2
+  });
   var movieMarker2 = new google.maps.Marker({
     position: movie2,
     map: movieMap
   });
+  movieMarker2.addListener('click', function(){
+    movieWindow2.open(map, movieMarker2);
+  });
+
+  // Movie Pin 3
+  var movieString3 = '<h5>Sundance Kabuki</h5>'+
+            '<p>1881 Post St, San Francisco, CA 94115</p>'+
+            '(415) 346-3243'+
+            '<p><a href="https://www.sundancecinemas.com/theater/7728" " target="_blank">Sundance Kabuki</a></p>';
+  var movieWindow3 = new google.maps.InfoWindow({
+    content: movieString3
+  });
   var movieMarker3 = new google.maps.Marker({
     position: movie3,
     map: movieMap
   });
+  movieMarker3.addListener('click', function(){
+    movieWindow3.open(map, movieMarker3);
+  });
+
+
+  // Movie Pin 4
+  var movieString4 = '<h5>Roxie Theatre</h5>'+
+            '<p>3117 16th St, San Francisco, CA 94103</p>'+
+            '(415) 863-1087'+
+            '<p><a href="http://www.roxie.com/" " target="_blank">Roxie Theatre</a></p>';
+  var movieWindow4 = new google.maps.InfoWindow({
+    content: movieString4
+  });
   var movieMarker4 = new google.maps.Marker({
     position: movie4,
     map: movieMap
   });
+  movieMarker4.addListener('click', function(){
+    movieWindow4.open(map, movieMarker4);
+  });
+
+  // Movie Pin 5
+  var movieString5 = '<h5>4-Star Theatre</h5>'+
+            '<p>2200 Clement St, San Francisco, CA 94121</p>'+
+            '(415) 666-3488'+
+            '<p><a href="http://www.hkinsf.com/4star/" " target="_blank">4-Star Theatre</a></p>';
+  var movieWindow5 = new google.maps.InfoWindow({
+    content: movieString5
+  });
   var movieMarker5 = new google.maps.Marker({
     position: movie5,
     map: movieMap
   });
+  movieMarker5.addListener('click', function(){
+    movieWindow5.open(map, movieMarker5);
+  });
+
+  // Movie Pin 6
+  var movieString6 = '<h5>Alamo Drafthouse Cinema</h5>'+
+            '<p>2550 Mission St, San Francisco, CA 94110</p>'+
+            '(415) 549-5959'+
+            '<p><a href="https://drafthouse.com/sf" " target="_blank">Alamo Drafthouse Cinema</a></p>';
+  var movieWindow6 = new google.maps.InfoWindow({
+    content: movieString6
+  });
   var movieMarker6 = new google.maps.Marker({
     position: movie6,
     map: movieMap
   });
+  movieMarker6.addListener('click', function(){
+    movieWindow6.open(map, movieMarker6);
+  });
+
+  // Movie Pin 7
+  var movieString7 = '<h5>Victoria Theatre</h5>'+
+            '<p>2961 16th St, San Francisco, CA 94103</p>'+
+            '(415) 863-7576'+
+            '<p><a href="http://www.victoriatheatre.org/" " target="_blank">Victoria Theatre</a></p>';
+  var movieWindow7 = new google.maps.InfoWindow({
+    content: movieString7
+  });
   var movieMarker7 = new google.maps.Marker({
     position: movie7,
     map: movieMap
   });
+  movieMarker7.addListener('click', function(){
+    movieWindow7.open(map, movieMarker7);
+  });
+
+  // Movie Pin 8
+  var movieString8 = '<h5>AMC Metreon 16</h5>'+
+            '<p>Metreon, 135 4th St #3000, San Francisco, CA 94103</p>'+
+            '(415) 369-6207'+
+            '<p><a href="https://www.amctheatres.com/movie-theatres/san-francisco/amc-metreon-16" " target="_blank">AMC Metreon 16</a></p>';
+  var movieWindow8 = new google.maps.InfoWindow({
+    content: movieString8
+  });
   var movieMarker8 = new google.maps.Marker({
     position: movie8,
     map: movieMap
   });
+  movieMarker8.addListener('click', function(){
+    movieWindow8.open(map, movieMarker8);
+  });
+
+  // Movie Pin 9
+  var movieString9 = '<h5>Clay Theatre</h5>'+
+            '<p>2261 Fillmore St, San Francisco, CA 94115</p>'+
+            '(415) 561-9921'+
+            '<p><a href="https://www.landmarktheatres.com/san-francisco/clay-theatre" " target="_blank">Clay Theatre</a></p>';
+  var movieWindow9 = new google.maps.InfoWindow({
+    content: movieString9
+  });
   var movieMarker9 = new google.maps.Marker({
     position: movie9,
     map: movieMap
   });
+  movieMarker9.addListener('click', function(){
+    movieWindow9.open(map, movieMarker9);
+  });
+
+  // Movie Pin 10
+  var movieString10 = '<h5>Curran Theatre</h5>'+
+            '<p>445 Geary St, San Francisco, CA 94102</p>'+
+            '(415) 358-1220'+
+            '<p><a href="https://sfcurran.com/" " target="_blank">Curran Theatre</a></p>';
+  var movieWindow10 = new google.maps.InfoWindow({
+    content: movieString10
+  });
   var movieMarker10 = new google.maps.Marker({
     position: movie10,
     map: movieMap
   });
+  movieMarker10.addListener('click', function(){
+    movieWindow10.open(map, movieMarker10);
+  });
 
   ////////////////////////////////////////////
   //              tourist map               //
