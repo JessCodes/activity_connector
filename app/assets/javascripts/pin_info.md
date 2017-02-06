@@ -189,7 +189,7 @@
 
 ## Tourist Map
 1. Alcatraz Island
-    - Alcatraz Island, Golden Gate National Recreation Area, B201 Fort Mason San Francisco, CA 94123
+    - Alcatraz Island, Golden Gate National Recreation Area, San Francisco, CA 94123
     - (415) 561-4900 
     - https://www.nps.gov/alca/index.htm
 2. Golden Gate Bridge

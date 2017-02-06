@@ -797,50 +797,142 @@ var mapFunction = function() {
     zoom: 13,
     center: tourist12
   });
+
+  // Tourist Pin 1
+  var touristString1 = '<h5>Alcatraz Island</h5>'+
+            '<p>Alcatraz Island, San Francisco, CA 94123</p>'+
+            '(415) 561-4900'+
+            '<p><a href="https://www.nps.gov/alca/index.htm" " target="_blank">Alcatraz Island</a></p>';
+  var touristWindow1 = new google.maps.InfoWindow({
+    content: touristString1
+  });
   var touristMarker1 = new google.maps.Marker({
     position: tourist1,
     map: touristMap
   });
+  touristMarker1.addListener('click', function(){
+    touristWindow1.open(map, touristMarker1);
+  });
+
+  // Tourist Pin 2
+  var touristString2 = '<h5>Golden Gate Bridge</h5>'+
+            '<p>Golden Gate Bridge, San Francisco, CA</p>'+
+            '<p><a href="http://goldengatebridge.org/" " target="_blank">Golden Gate Bridge</a></p>';
+  var touristWindow2 = new google.maps.InfoWindow({
+    content: touristString2
+  });
   var touristMarker2 = new google.maps.Marker({
     position: tourist2,
     map: touristMap
   });
+  touristMarker2.addListener('click', function(){
+    touristWindow2.open(map, touristMarker2);
+  });
+
+  // Tourist Pin 3
+  var touristString3 = '<h5>Golden Gate Park</h5>'+
+            '<p>San Francisco, CA 94122</p>'+
+            '<p><a href="https://goldengatepark.com/" " target="_blank">Golden Gate Park</a></p>';
+  var touristWindow3 = new google.maps.InfoWindow({
+    content: touristString3
+  });
   var touristMarker3 = new google.maps.Marker({
     position: tourist3,
     map: touristMap
   });
+  touristMarker3.addListener('click', function(){
+    touristWindow3.open(map, touristMarker3);
+  });
+
+  // Tourist Pin 4
+  var touristString4 = '<h5>Cal Academy of Sciences</h5>'+
+            '<p>55 Music Concourse Dr, San Francisco, CA 94118</p>'+
+            '(415) 379-8000'+
+            '<p><a href="http://www.calacademy.org/" " target="_blank">Cal Academy of Sciences</a></p>';
+  var touristWindow4 = new google.maps.InfoWindow({
+    content: touristString4
+  });
   var touristMarker4 = new google.maps.Marker({
     position: tourist4,
     map: touristMap
   });
+  touristMarker4.addListener('click', function(){
+    touristWindow4.open(map, touristMarker4);
+  });
+
+  // Tourist Pin 5
+  var touristString5 = '<h5>San Francisco Museum of Modern Art</h5>'+
+            '<p>151 3rd St, San Francisco, CA 94103</p>'+
+            '(415) 357-4000'+
+            '<p><a href="https://www.sfmoma.org/" " target="_blank">San Francisco Museum of Modern Art</a></p>';
+  var touristWindow5 = new google.maps.InfoWindow({
+    content: touristString5
+  });
   var touristMarker5 = new google.maps.Marker({
     position: tourist5,
     map: touristMap
   });
+  touristMarker5.addListener('click', function(){
+    touristWindow5.open(map, touristMarker5);
+  });
+
+  // Tourist Pin 6
+  var touristString6 = '<h5>Twin Peaks</h5>'+
+            '<p>501 Twin Peaks Blvd, San Francisco, CA 94114</p>'+
+            '(415) 831-6331'+
+            '<p><a href="https://en.wikipedia.org/wiki/Twin_Peaks_(San_Francisco)" " target="_blank">Twin Peaks</a></p>';
+  var touristWindow6 = new google.maps.InfoWindow({
+    content: touristString6
+  });
   var touristMarker6 = new google.maps.Marker({
     position: tourist6,
     map: touristMap
   });
+  touristMarker6.addListener('click', function(){
+    touristWindow6.open(map, touristMarker6);
+  });
+
+  // Tourist Pin 7
+  var touristString1 = '<h5>AA</h5>'+
+            '<p>xx</p>'+
+            'xx'+
+            '<p><a href="xx" " target="_blank">AA</a></p>';
+  var touristWindow1 = new google.maps.InfoWindow({
+    content: touristString1
+  });
   var touristMarker7 = new google.maps.Marker({
     position: tourist7,
     map: touristMap
   });
+  touristMarker1.addListener('click', function(){
+    touristWindow1.open(map, touristMarker1);
+  });
+
+  // Tourist Pin 8
   var touristMarker8 = new google.maps.Marker({
     position: tourist8,
     map: touristMap
   });
+
+  // Tourist Pin 9
   var touristMarker9 = new google.maps.Marker({
     position: tourist9,
     map: touristMap
   });
+
+  // Tourist Pin 10
   var touristMarker10 = new google.maps.Marker({
     position: tourist10,
     map: touristMap
   });
+
+  // Tourist Pin 11
   var touristMarker11 = new google.maps.Marker({
     position: tourist11,
     map: touristMap
   });
+
+  // Tourist Pin 12
   var touristMarker12 = new google.maps.Marker({
     position: tourist12,
     map: touristMap
