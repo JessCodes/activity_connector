@@ -792,10 +792,11 @@ var mapFunction = function() {
   var tourist10 = {lat: 37.771516, lng: -122.468647};
   var tourist11 = {lat: 37.803907, lng: -122.464062};
   var tourist12 = {lat: 37.777615, lng: -122.420614};
+  var touristCenter = {lat: 37.7916146, lng: -122.4276133};
 
   var touristMap = new google.maps.Map(document.getElementById('tourist-map'), {
     zoom: 13,
-    center: tourist12
+    center: touristCenter
   });
 
   // Tourist Pin 1
