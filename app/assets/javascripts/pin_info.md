@@ -1,3 +1,4 @@
+## Coffee Map
 1. Blue Bottle
     - 315 Linden St, San Francisco, CA 94102
     - (510) 653-3394
@@ -189,7 +190,7 @@
 
 ## Tourist Map
 1. Alcatraz Island
-    - Alcatraz Island, Golden Gate National Recreation Area, San Francisco, CA 94123
+    - Alcatraz Island, San Francisco, CA 94123
     - (415) 561-4900 
     - https://www.nps.gov/alca/index.htm
 2. Golden Gate Bridge
@@ -226,6 +227,7 @@
     - (415) 750-3600
     - https://deyoung.famsf.org/
 11. Crissy Field
+    - Crissy Field, San Francisco, CA 94129
     - (415) 561-4700
     - http://www.parksconservancy.org/visit/park-sites/crissy-field.html
 12. San Francisco Symphony
