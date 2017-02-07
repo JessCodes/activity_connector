@@ -797,52 +797,193 @@ var mapFunction = function() {
     zoom: 13,
     center: tourist12
   });
+
+  // Tourist Pin 1
+  var touristString1 = '<h5>Alcatraz Island</h5>'+
+            '<p>Alcatraz Island, San Francisco, CA 94123</p>'+
+            '(415) 561-4900'+
+            '<p><a href="https://www.nps.gov/alca/index.htm" " target="_blank">Alcatraz Island</a></p>';
+  var touristWindow1 = new google.maps.InfoWindow({
+    content: touristString1
+  });
   var touristMarker1 = new google.maps.Marker({
     position: tourist1,
     map: touristMap
   });
+  touristMarker1.addListener('click', function(){
+    touristWindow1.open(map, touristMarker1);
+  });
+
+  // Tourist Pin 2
+  var touristString2 = '<h5>Golden Gate Bridge</h5>'+
+            '<p>Golden Gate Bridge, San Francisco, CA</p>'+
+            '<p><a href="http://goldengatebridge.org/" " target="_blank">Golden Gate Bridge</a></p>';
+  var touristWindow2 = new google.maps.InfoWindow({
+    content: touristString2
+  });
   var touristMarker2 = new google.maps.Marker({
     position: tourist2,
     map: touristMap
   });
+  touristMarker2.addListener('click', function(){
+    touristWindow2.open(map, touristMarker2);
+  });
+
+  // Tourist Pin 3
+  var touristString3 = '<h5>Golden Gate Park</h5>'+
+            '<p>San Francisco, CA 94122</p>'+
+            '<p><a href="https://goldengatepark.com/" " target="_blank">Golden Gate Park</a></p>';
+  var touristWindow3 = new google.maps.InfoWindow({
+    content: touristString3
+  });
   var touristMarker3 = new google.maps.Marker({
     position: tourist3,
     map: touristMap
   });
+  touristMarker3.addListener('click', function(){
+    touristWindow3.open(map, touristMarker3);
+  });
+
+  // Tourist Pin 4
+  var touristString4 = '<h5>Cal Academy of Sciences</h5>'+
+            '<p>55 Music Concourse Dr, San Francisco, CA 94118</p>'+
+            '(415) 379-8000'+
+            '<p><a href="http://www.calacademy.org/" " target="_blank">Cal Academy of Sciences</a></p>';
+  var touristWindow4 = new google.maps.InfoWindow({
+    content: touristString4
+  });
   var touristMarker4 = new google.maps.Marker({
     position: tourist4,
     map: touristMap
   });
+  touristMarker4.addListener('click', function(){
+    touristWindow4.open(map, touristMarker4);
+  });
+
+  // Tourist Pin 5
+  var touristString5 = '<h5>San Francisco Museum of Modern Art</h5>'+
+            '<p>151 3rd St, San Francisco, CA 94103</p>'+
+            '(415) 357-4000'+
+            '<p><a href="https://www.sfmoma.org/" " target="_blank">San Francisco Museum of Modern Art</a></p>';
+  var touristWindow5 = new google.maps.InfoWindow({
+    content: touristString5
+  });
   var touristMarker5 = new google.maps.Marker({
     position: tourist5,
     map: touristMap
   });
+  touristMarker5.addListener('click', function(){
+    touristWindow5.open(map, touristMarker5);
+  });
+
+  // Tourist Pin 6
+  var touristString6 = '<h5>Twin Peaks</h5>'+
+            '<p>501 Twin Peaks Blvd, San Francisco, CA 94114</p>'+
+            '(415) 831-6331'+
+            '<p><a href="https://en.wikipedia.org/wiki/Twin_Peaks_(San_Francisco)" " target="_blank">Twin Peaks</a></p>';
+  var touristWindow6 = new google.maps.InfoWindow({
+    content: touristString6
+  });
   var touristMarker6 = new google.maps.Marker({
     position: tourist6,
     map: touristMap
   });
+  touristMarker6.addListener('click', function(){
+    touristWindow6.open(map, touristMarker6);
+  });
+
+  // Tourist Pin 7
+  var touristString7 = '<h5>Exploratorium</h5>'+
+            '<p>Pier 15, The Embarcadero & Green St., San Francisco, CA 94111</p>'+
+            '(415) 528-4444'+
+            '<p><a href="https://www.exploratorium.edu/" " target="_blank">Exploratorium</a></p>';
+  var touristWindow7 = new google.maps.InfoWindow({
+    content: touristString7
+  });
   var touristMarker7 = new google.maps.Marker({
     position: tourist7,
     map: touristMap
   });
+  touristMarker7.addListener('click', function(){
+    touristWindow7.open(map, touristMarker7);
+  });
+
+  // Tourist Pin 8
+  var touristString8 = '<h5>Palace of Fine Arts</h5>'+
+            '<p>3301 Lyon St, San Francisco, CA 94123</p>'+
+            '<p><a href="https://palaceoffinearts.org/" " target="_blank">Palace of Fine Arts</a></p>';
+  var touristWindow8 = new google.maps.InfoWindow({
+    content: touristString8
+  });
   var touristMarker8 = new google.maps.Marker({
     position: tourist8,
     map: touristMap
   });
+  touristMarker8.addListener('click', function(){
+    touristWindow8.open(map, touristMarker8);
+  });
+
+  // Tourist Pin 9
+  var touristString9 = '<h5>AT&T Park</h5>'+
+            '<p>24 Willie Mays Plaza, San Francisco, CA 94107</p>'+
+            '(415) 972-2000'+
+            '<p><a href="http://sanfrancisco.giants.mlb.com/sf/ballpark/information/" " target="_blank">AT&T Park</a></p>';
+  var touristWindow9 = new google.maps.InfoWindow({
+    content: touristString9
+  });
   var touristMarker9 = new google.maps.Marker({
     position: tourist9,
     map: touristMap
   });
+  touristMarker9.addListener('click', function(){
+    touristWindow9.open(map, touristMarker9);
+  });
+
+  // Tourist Pin 10
+  var touristString10 = '<h5>de Young Museum</h5>'+
+            '<p>50 Hagiwara Tea Garden Dr, San Francisco, CA 94118</p>'+
+            '(415) 750-3600'+
+            '<p><a href="https://deyoung.famsf.org/" " target="_blank">de Young Museum</a></p>';
+  var touristWindow10 = new google.maps.InfoWindow({
+    content: touristString10
+  });
   var touristMarker10 = new google.maps.Marker({
     position: tourist10,
     map: touristMap
   });
+  touristMarker10.addListener('click', function(){
+    touristWindow10.open(map, touristMarker10);
+  });
+
+  // Tourist Pin 11
+  var touristString11 = '<h5>Crissy Field</h5>'+
+            '<p>Crissy Field, San Francisco, CA 94129</p>'+
+            '(415) 561-4700'+
+            '<p><a href="http://www.parksconservancy.org/visit/park-sites/crissy-field.html" " target="_blank">Crissy Field</a></p>';
+  var touristWindow11 = new google.maps.InfoWindow({
+    content: touristString11
+  });
   var touristMarker11 = new google.maps.Marker({
     position: tourist11,
     map: touristMap
   });
+    touristMarker11.addListener('click', function(){
+    touristWindow11.open(map, touristMarker11);
+  });
+
+  // Tourist Pin 12
+  var touristString12 = '<h5>San Francisco Symphony</h5>'+
+            '<p>201 Van Ness Ave, San Francisco, CA 94102</p>'+
+            '(415) 864-6000'+
+            '<p><a href="https://www.sfsymphony.org/" " target="_blank">San Francisco Symphony</a></p>';
+  var touristWindow12 = new google.maps.InfoWindow({
+    content: touristString12
+  });
   var touristMarker12 = new google.maps.Marker({
     position: tourist12,
     map: touristMap
   });
+  touristMarker12.addListener('click', function(){
+    touristWindow12.open(map, touristMarker12);
+  });
 }
