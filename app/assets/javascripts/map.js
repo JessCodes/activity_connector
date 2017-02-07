@@ -893,48 +893,97 @@ var mapFunction = function() {
   });
 
   // Tourist Pin 7
-  var touristString1 = '<h5>AA</h5>'+
-            '<p>xx</p>'+
-            'xx'+
-            '<p><a href="xx" " target="_blank">AA</a></p>';
-  var touristWindow1 = new google.maps.InfoWindow({
-    content: touristString1
+  var touristString7 = '<h5>Exploratorium</h5>'+
+            '<p>Pier 15, The Embarcadero & Green St., San Francisco, CA 94111</p>'+
+            '(415) 528-4444'+
+            '<p><a href="https://www.exploratorium.edu/" " target="_blank">Exploratorium</a></p>';
+  var touristWindow7 = new google.maps.InfoWindow({
+    content: touristString7
   });
   var touristMarker7 = new google.maps.Marker({
     position: tourist7,
     map: touristMap
   });
-  touristMarker1.addListener('click', function(){
-    touristWindow1.open(map, touristMarker1);
+  touristMarker7.addListener('click', function(){
+    touristWindow7.open(map, touristMarker7);
   });
 
   // Tourist Pin 8
+  var touristString8 = '<h5>Palace of Fine Arts</h5>'+
+            '<p>3301 Lyon St, San Francisco, CA 94123</p>'+
+            '<p><a href="https://palaceoffinearts.org/" " target="_blank">Palace of Fine Arts</a></p>';
+  var touristWindow8 = new google.maps.InfoWindow({
+    content: touristString8
+  });
   var touristMarker8 = new google.maps.Marker({
     position: tourist8,
     map: touristMap
   });
+  touristMarker8.addListener('click', function(){
+    touristWindow8.open(map, touristMarker8);
+  });
 
   // Tourist Pin 9
+  var touristString9 = '<h5>AT&T Park</h5>'+
+            '<p>24 Willie Mays Plaza, San Francisco, CA 94107</p>'+
+            '(415) 972-2000'+
+            '<p><a href="http://sanfrancisco.giants.mlb.com/sf/ballpark/information/" " target="_blank">AT&T Park</a></p>';
+  var touristWindow9 = new google.maps.InfoWindow({
+    content: touristString9
+  });
   var touristMarker9 = new google.maps.Marker({
     position: tourist9,
     map: touristMap
   });
+  touristMarker9.addListener('click', function(){
+    touristWindow9.open(map, touristMarker9);
+  });
 
   // Tourist Pin 10
+  var touristString10 = '<h5>de Young Museum</h5>'+
+            '<p>50 Hagiwara Tea Garden Dr, San Francisco, CA 94118</p>'+
+            '(415) 750-3600'+
+            '<p><a href="https://deyoung.famsf.org/" " target="_blank">de Young Museum</a></p>';
+  var touristWindow10 = new google.maps.InfoWindow({
+    content: touristString10
+  });
   var touristMarker10 = new google.maps.Marker({
     position: tourist10,
     map: touristMap
   });
+  touristMarker10.addListener('click', function(){
+    touristWindow10.open(map, touristMarker10);
+  });
 
   // Tourist Pin 11
+  var touristString11 = '<h5>Crissy Field</h5>'+
+            '<p>Crissy Field, San Francisco, CA 94129</p>'+
+            '(415) 561-4700'+
+            '<p><a href="http://www.parksconservancy.org/visit/park-sites/crissy-field.html" " target="_blank">Crissy Field</a></p>';
+  var touristWindow11 = new google.maps.InfoWindow({
+    content: touristString11
+  });
   var touristMarker11 = new google.maps.Marker({
     position: tourist11,
     map: touristMap
   });
+    touristMarker11.addListener('click', function(){
+    touristWindow11.open(map, touristMarker11);
+  });
 
   // Tourist Pin 12
+  var touristString12 = '<h5>San Francisco Symphony</h5>'+
+            '<p>201 Van Ness Ave, San Francisco, CA 94102</p>'+
+            '(415) 864-6000'+
+            '<p><a href="https://www.sfsymphony.org/" " target="_blank">San Francisco Symphony</a></p>';
+  var touristWindow12 = new google.maps.InfoWindow({
+    content: touristString12
+  });
   var touristMarker12 = new google.maps.Marker({
     position: tourist12,
     map: touristMap
   });
+  touristMarker12.addListener('click', function(){
+    touristWindow12.open(map, touristMarker12);
+  });
 }
