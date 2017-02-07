@@ -554,42 +554,122 @@ var mapFunction = function() {
     zoom: 14,
     center: pamper5
   });
+
+  // Pamper Pin 1
+  var pamperString1 = '<h5>SenSpa</h5>'+
+            '<p>1161 Gorgas Ave, San Francisco, CA 94129</p>'+
+            '(415) 441-1777'+
+            '<p><a href="www.senspa.com/" " target="_blank">SenSpa</a></p>';
+  var pamperWindow1 = new google.maps.InfoWindow({
+    content: pamperString1
+  })
   var pamperMarker1 = new google.maps.Marker({
     position: pamper1,
     map: pamperMap
   });
+  pamperMarker1.addListener('click', function(){
+    pamperWindow1.open(map, pamperMarker1);
+  });
+
+  // Pamper Pin 2
+  var pamperString2 = '<h5>International Orange</h5>'+
+            '<p>2044 Fillmore St, San Francisco, CA 94115</p>'+
+            '(415) 563-5000'+
+            '<p><a href="internationalorange.com/" " target="_blank">International Orange</a></p>';
+  var pamperWindow2 = new google.maps.InfoWindow({
+    content: pamperString2
+  })
   var pamperMarker2 = new google.maps.Marker({
     position: pamper2,
     map: pamperMap
   });
+  pamperMarker2.addListener('click', function(){
+    pamperWindow2.open(map, pamperMarker2);
+  });
+
+  // Pamper Pin 3
+  var pamperString3 = '<h5>Remède Spa</h5>'+
+            '<p>The St. Regis San Francisco, 125 3rd St, San Francisco, CA 94103</p>'+
+            '(415) 284-4060'+
+            '<p><a href="http://www.stregissanfrancisco.com/remede-spa" " target="_blank">Remède Spa</a></p>';
+  var pamperWindow3 = new google.maps.InfoWindow({
+    content: pamperString3
+  })
   var pamperMarker3 = new google.maps.Marker({
     position: pamper3,
     map: pamperMap
   });
+  pamperMarker3.addListener('click', function(){
+    pamperWindow3.open(map, pamperMarker3);
+  });
+
+  // Pamper Pin 4
+  var pamperString4 = '<h5>Spa Radiance</h5>'+
+            '<p>3011 Fillmore St, San Francisco, CA 94123</p>'+
+            '(415) 346-6281'+
+            '<p><a href="https://www.sparadiance.com/" " target="_blank">Spa Radiance</a></p>';
+  var pamperWindow4 = new google.maps.InfoWindow({
+    content: pamperString4
+  })
   var pamperMarker4 = new google.maps.Marker({
     position: pamper4,
     map: pamperMap
   });
+  pamperMarker4.addListener('click', function(){
+    pamperWindow4.open(map, pamperMarker4);
+  });
+
+  // Pamper Pin 5
+  var pamperString5 = '<h5>Nob Hill Spa at The Scarlet Huntington</h5>'+
+            '<p>1075 California St, San Francisco, CA 94108</p>'+
+            '(415) 345-2888'+
+            '<p><a href="www.nobhillspa.com/spa_services.cfm" " target="_blank">Nob Hill Spa at The Scarlet Huntington</a></p>';
+  var pamperWindow5 = new google.maps.InfoWindow({
+    content: pamperString5
+  })
   var pamperMarker5 = new google.maps.Marker({
     position: pamper5,
     map: pamperMap
   });
+  pamperMarker5.addListener('click', function(){
+    pamperWindow5.open(map, pamperMarker5);
+  });
+
+  // Pamper Pin 6
+  var pamperString6 = '<h5>aa</h5>'+
+            '<p>xx</p>'+
+            'xx'+
+            '<p><a href="xx" " target="_blank">aa</a></p>';
+  var pamperWindow6 = new google.maps.InfoWindow({
+    content: pamperString6
+  })
   var pamperMarker6 = new google.maps.Marker({
     position: pamper6,
     map: pamperMap
   });
+  pamperMarker6.addListener('click', function(){
+    pamperWindow6.open(map, pamperMarker6);
+  });
+
+  // Pamper Pin 7
   var pamperMarker7 = new google.maps.Marker({
     position: pamper7,
     map: pamperMap
   });
+
+  // Pamper Pin 8
   var pamperMarker8 = new google.maps.Marker({
     position: pamper8,
     map: pamperMap
   });
+
+  // Pamper Pin 9
   var pamperMarker9 = new google.maps.Marker({
     position: pamper9,
     map: pamperMap
   });
+
+  // Pamper Pin 10
   var pamperMarker10 = new google.maps.Marker({
     position: pamper10,
     map: pamperMap
@@ -792,10 +872,11 @@ var mapFunction = function() {
   var tourist10 = {lat: 37.771516, lng: -122.468647};
   var tourist11 = {lat: 37.803907, lng: -122.464062};
   var tourist12 = {lat: 37.777615, lng: -122.420614};
+  var touristCenter = {lat: 37.7916146, lng: -122.4276133};
 
   var touristMap = new google.maps.Map(document.getElementById('tourist-map'), {
     zoom: 13,
-    center: tourist12
+    center: touristCenter
   });
 
   // Tourist Pin 1
