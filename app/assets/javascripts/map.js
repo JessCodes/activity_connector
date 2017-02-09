@@ -549,17 +549,18 @@ var mapFunction = function() {
   var pamper8 = {lat: 37.784838, lng: -122.432496}; // Kabuki
   var pamper9 = {lat: 37.786794, lng: -122.394229}; // Cocoon Urban Day Spa
   var pamper10 = {lat: 37.781512, lng: -122.396465}; // Polished Nest
+  var pamperCenter = {lat: 37.792817, lng: -122.417784} // map center location
 
   var pamperMap = new google.maps.Map(document.getElementById('pamper-map'), {
     zoom: 14,
-    center: pamper5
+    center: pamperCenter
   });
 
   // Pamper Pin 1
   var pamperString1 = '<h5>SenSpa</h5>'+
             '<p>1161 Gorgas Ave, San Francisco, CA 94129</p>'+
             '(415) 441-1777'+
-            '<p><a href="www.senspa.com/" " target="_blank">SenSpa</a></p>';
+            '<p><a href="http://www.senspa.com/" " target="_blank">SenSpa</a></p>';
   var pamperWindow1 = new google.maps.InfoWindow({
     content: pamperString1
   })
@@ -575,7 +576,7 @@ var mapFunction = function() {
   var pamperString2 = '<h5>International Orange</h5>'+
             '<p>2044 Fillmore St, San Francisco, CA 94115</p>'+
             '(415) 563-5000'+
-            '<p><a href="internationalorange.com/" " target="_blank">International Orange</a></p>';
+            '<p><a href="http://internationalorange.com/" " target="_blank">International Orange</a></p>';
   var pamperWindow2 = new google.maps.InfoWindow({
     content: pamperString2
   })
@@ -623,7 +624,7 @@ var mapFunction = function() {
   var pamperString5 = '<h5>Nob Hill Spa at The Scarlet Huntington</h5>'+
             '<p>1075 California St, San Francisco, CA 94108</p>'+
             '(415) 345-2888'+
-            '<p><a href="www.nobhillspa.com/spa_services.cfm" " target="_blank">Nob Hill Spa at The Scarlet Huntington</a></p>';
+            '<p><a href="http://www.nobhillspa.com/spa_services.cfm" " target="_blank">Nob Hill Spa at The Scarlet Huntington</a></p>';
   var pamperWindow5 = new google.maps.InfoWindow({
     content: pamperString5
   })
@@ -636,10 +637,10 @@ var mapFunction = function() {
   });
 
   // Pamper Pin 6
-  var pamperString6 = '<h5>aa</h5>'+
-            '<p>xx</p>'+
-            'xx'+
-            '<p><a href="xx" " target="_blank">aa</a></p>';
+  var pamperString6 = '<h5>Spa Vitale</h5>'+
+            '<p>Hotel Vitale, 8 Mission St, San Francisco, CA 94105</p>'+
+            '(415) 278-3788'+
+            '<p><a href="http://www.jdvhotels.com/spas/hotel-vitale/spa-vitale/" " target="_blank">Spa Vitale</a></p>';
   var pamperWindow6 = new google.maps.InfoWindow({
     content: pamperString6
   })
@@ -652,28 +653,68 @@ var mapFunction = function() {
   });
 
   // Pamper Pin 7
+  var pamperString7 = '<h5>Burke Williams Spa</h5>'+
+            '<p>Westfield San Francisco Centre, 845 Market St #510, San Francisco, CA 94103</p>'+
+            '(415) 694-7980'+
+            '<p><a href="http://burkewilliamsspa.com/san-francisco-spa/" " target="_blank">Burke Williams Spa</a></p>';
+  var pamperWindow7 = new google.maps.InfoWindow({
+    content: pamperString7
+  })
   var pamperMarker7 = new google.maps.Marker({
     position: pamper7,
     map: pamperMap
   });
+  pamperMarker7.addListener('click', function(){
+    pamperWindow7.open(map, pamperMarker7);
+  });
 
   // Pamper Pin 8
+  var pamperString8 = '<h5>Kabuki Springs & Spa</h5>'+
+            '<p>1750 Geary Blvd, San Francisco, CA 94115</p>'+
+            '(415) 922-6000'+
+            '<p><a href="http://kabukisprings.com/" " target="_blank">Kabuki Springs & Spa</a></p>';
+  var pamperWindow8 = new google.maps.InfoWindow({
+    content: pamperString8
+  })
   var pamperMarker8 = new google.maps.Marker({
     position: pamper8,
     map: pamperMap
   });
+  pamperMarker8.addListener('click', function(){
+    pamperWindow8.open(map, pamperMarker8);
+  });
 
   // Pamper Pin 9
-  var pamperMarker9 = new google.maps.Marker({
+  var pamperString9 = '<h5>Cocoon Urban Day Spa</h5>'+
+            '<p>330 1st St, San Francisco, CA 94105</p>'+
+            '(415) 777-0100'+
+            '<p><a href="http://www.cocoonurbandayspa.com/" " target="_blank">Cocoon Urban Day Spa</a></p>';
+  var pamperWindow9 = new google.maps.InfoWindow({
+    content: pamperString9
+  })
+  var pamperMarker9 = new google.maps.Marker({
     position: pamper9,
     map: pamperMap
   });
+    pamperMarker9.addListener('click', function(){
+    pamperWindow9.open(map, pamperMarker9);
+  });
 
   // Pamper Pin 10
+  var pamperString10 = '<h5>Polished Nest</h5>'+
+            '<p>470 3rd St, San Francisco, CA 94107</p>'+
+            '(415) 543-0993'+
+            '<p><a href="http://www.polishednest.com/" " target="_blank">Polished Nest</a></p>';
+  var pamperWindow10 = new google.maps.InfoWindow({
+    content: pamperString10
+  })
   var pamperMarker10 = new google.maps.Marker({
     position: pamper10,
     map: pamperMap
   });
+  pamperMarker10.addListener('click', function(){
+    pamperWindow10.open(map, pamperMarker10);
+  });
 
   ////////////////////////////////////////////
   //               movie map                //
