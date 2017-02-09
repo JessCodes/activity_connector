@@ -549,10 +549,11 @@ var mapFunction = function() {
   var pamper8 = {lat: 37.784838, lng: -122.432496}; // Kabuki
   var pamper9 = {lat: 37.786794, lng: -122.394229}; // Cocoon Urban Day Spa
   var pamper10 = {lat: 37.781512, lng: -122.396465}; // Polished Nest
+  var pamperCenter = {lat: 37.792817, lng: -122.417784} // map center location
 
   var pamperMap = new google.maps.Map(document.getElementById('pamper-map'), {
     zoom: 14,
-    center: pamper5
+    center: pamperCenter
   });
 
   // Pamper Pin 1
